@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 	// Configuration
     public float speed;	
 
+	public HealthBar HeralthBar;
 	// Methods
     // Start is called before the first frame update
     void Start()
