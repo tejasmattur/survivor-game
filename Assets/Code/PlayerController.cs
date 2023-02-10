@@ -78,13 +78,13 @@ public class PlayerController : MonoBehaviour
 
     	if (!animator.GetBool("Attack") && animator.GetFloat("Speed") < 0.1 && enemies.Length != 0) {
     		animator.SetBool("Attack", true);
-    		Debug.Log(animator.GetBool("Attack"));
+    		//Debug.Log(animator.GetBool("Attack"));
     	}
     	else if (animator.GetFloat("Speed") > 0.1) {
     		animator.SetBool("Attack", false);
     		// Debug.Log("walking");
     	}
-    	Debug.Log(animator.GetFloat("Speed"));
+    	//Debug.Log(animator.GetFloat("Speed"));
 
     	for (int i=0; i < enemies.Length; i++) {
     		Vector2 e_pos = enemies[i].transform.position;

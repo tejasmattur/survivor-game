@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public float HitPoints;
     public float maxHealth = 10;
     public HealthBar healthBar;
+    public SpawnEnemies spawner;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
         healthBar.setHealth(HitPoints, maxHealth);
         if(HitPoints == 0){
             Destroy(gameObject);
+            spawner.enemyCount -= 1;
         }
         
     }
