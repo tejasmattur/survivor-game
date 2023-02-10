@@ -10,11 +10,12 @@ public class HealthBar : MonoBehaviour
     public Color High;
     public Vector3 Offset;
     // Start is called before the first frame update
-    void setHealth(float health, float maxHealth)
+    public void setHealth(float health, float maxHealth)
     {
-        Slider.gameObject.SetActive(true);
-        Slider.value = health;
+        Slider.gameObject.SetActive(health < maxHealth);
         Slider.maxValue = maxHealth;
+        Slider.value = health;
+        
 
 
         Slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(Low, High, Slider.normalizedValue);

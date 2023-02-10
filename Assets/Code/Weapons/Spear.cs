@@ -22,6 +22,11 @@ public class Spear : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D other) {
+
+        var enemy = other.collider.GetComponent<Enemy>();
+        if(enemy){
+            enemy.takeDamage(1);
+        }
     	Destroy(gameObject);
     }
 }
