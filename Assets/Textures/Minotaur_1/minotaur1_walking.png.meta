@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +117,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: minotaur1_walking_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1999
+        width: 472
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc36a046c6910054ab56edf17bfafb3f
+      internalID: -1740820114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_1
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2000
+        width: 456
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeba64289c3ab8c4b90401fd7356e1d7
+      internalID: -1105243757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_2
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 2002
+        width: 438
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbc425d3be9d584897d5403a43bf694
+      internalID: 1754752327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_3
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 2004
+        width: 424
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31b13c36349d9b4c817edb1b16fd39c
+      internalID: -1172083529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_4
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1511
+        width: 426
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da90ef507e88c594fa802169b3566b4c
+      internalID: -992421730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_5
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1514
+        width: 413
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2e8ec2b02c8d14ebbad2b470675de9
+      internalID: 954582427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_6
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 1514
+        width: 413
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3a42259c9be8c4e93aaa436bddecbe
+      internalID: 1481896171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_7
+      rect:
+        serializedVersion: 2
+        x: 2383
+        y: 1509
+        width: 436
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03abcc22bf50924aa1c4da7e44791ff
+      internalID: -1368555803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1018
+        width: 406
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080de23520ad8e445bac28b427b64d0a
+      internalID: -652656495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_9
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1017
+        width: 386
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8f1a78c9ed3a04a89600c2fa26c2d3
+      internalID: 1018116856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_10
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1016
+        width: 364
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a26337e7a485c4bb2428fc5bed9358
+      internalID: -1728035956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_11
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 1016
+        width: 451
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fea5b5bc6fe13459ae845d939a11e6
+      internalID: 987584256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_12
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 522
+        width: 349
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c5e3040dea0334ca898c872762f3a5
+      internalID: 508491607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_13
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 523
+        width: 354
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe186ffad8a01d4b9ca24eedb61986f
+      internalID: 1411187983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_14
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 525
+        width: 362
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44942413773a1d443ace52decca68621
+      internalID: -811062792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_15
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 35
+        width: 384
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0339fd063eb23ab468d5803a25e0f91a
+      internalID: -850531985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_16
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 37
+        width: 405
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1983b62fe9cd3943b999e789593abab
+      internalID: 12393130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_walking_17
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 39
+        width: 419
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f212e077e0540046a5e3a7cb62a0654
+      internalID: 589654118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +506,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minotaur1_walking_10: -1728035956
+      minotaur1_walking_5: 954582427
+      minotaur1_walking_1: -1105243757
+      minotaur1_walking_15: -850531985
+      minotaur1_walking_2: 1754752327
+      minotaur1_walking_3: -1172083529
+      minotaur1_walking_11: 987584256
+      minotaur1_walking_14: -811062792
+      minotaur1_walking_8: -652656495
+      minotaur1_walking_9: 1018116856
+      minotaur1_walking_13: 1411187983
+      minotaur1_walking_6: 1481896171
+      minotaur1_walking_4: -992421730
+      minotaur1_walking_0: -1740820114
+      minotaur1_walking_7: -1368555803
+      minotaur1_walking_16: 12393130
+      minotaur1_walking_12: 508491607
+      minotaur1_walking_17: 589654118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

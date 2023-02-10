@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +117,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: satyr1_blinking_0
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 942
+        width: 253
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb61ca352740c04ba9fa4c42b3d41dd
+      internalID: -2058624645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 942
+        width: 250
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9d00983efa82e46b3b04ff9b8e2e9e
+      internalID: 1655257171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_2
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 942
+        width: 249
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32919c570a097d745bca207c3b45760b
+      internalID: 322393477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_3
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 942
+        width: 252
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75c76e1643ee2044b96b9125ae76e7f
+      internalID: 861590628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 520
+        width: 248
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00c186ed715b3a4f89468e7185a3bfb
+      internalID: 1428388987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_5
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 520
+        width: 247
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667a6f55b7bba4b499cf738dc452bece
+      internalID: -139879964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_6
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 520
+        width: 248
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64264bcd976a8a244abd214e90429989
+      internalID: 207783786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_7
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 520
+        width: 252
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704fb5c6729d5bb4cac10ac76c29f2c4
+      internalID: 1421045542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_8
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 98
+        width: 248
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ecd91af4a42f8499d2d2c818e1978e
+      internalID: -1175715383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_9
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 98
+        width: 251
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75369d988b37ac14cb6224321526cbfe
+      internalID: 675001182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_10
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 98
+        width: 253
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b870754dd04964c88f24a0cf65d555
+      internalID: -1442574115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_blinking_11
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 98
+        width: 253
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe630759254ab3e4bb9d03cd962c7540
+      internalID: 862612263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +380,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      satyr1_blinking_6: 207783786
+      satyr1_blinking_9: 675001182
+      satyr1_blinking_7: 1421045542
+      satyr1_blinking_1: 1655257171
+      satyr1_blinking_3: 861590628
+      satyr1_blinking_5: -139879964
+      satyr1_blinking_4: 1428388987
+      satyr1_blinking_11: 862612263
+      satyr1_blinking_2: 322393477
+      satyr1_blinking_8: -1175715383
+      satyr1_blinking_0: -2058624645
+      satyr1_blinking_10: -1442574115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

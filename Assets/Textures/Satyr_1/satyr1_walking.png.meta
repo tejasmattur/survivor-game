@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +117,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: satyr1_walking_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1786
+        width: 241
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c986094aa0cf6b44f8254f688889bb1f
+      internalID: 654206629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_1
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1786
+        width: 242
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b344509e08cf6514fb54af056fa2b152
+      internalID: -829530710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_2
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1785
+        width: 244
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe8f64db3b35db4a8e08574bacf5737
+      internalID: -749436996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_3
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1785
+        width: 260
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbeb616565b8be469238cf104132023
+      internalID: -2040097701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_4
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1363
+        width: 251
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1a6881bfc97704d9bc42e9365cfc6c
+      internalID: -744539996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_5
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1363
+        width: 257
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cd041da69439c46a0ee08f0fe102b0
+      internalID: 1688174618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_6
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1363
+        width: 267
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afa64fff5229324ea1812e745b0a1c6
+      internalID: -1167137001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_7
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 1363
+        width: 258
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbb63255eb186b41828dde219147a41
+      internalID: -360197544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 942
+        width: 275
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c69e5fcdf179374496625f3f5b2379b
+      internalID: 474477265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_9
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 942
+        width: 271
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f380f5a4983ce44b940fe221c943dd
+      internalID: -720143729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_10
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 942
+        width: 270
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b075ca1274e9f409e827f791cd247c
+      internalID: -1642250470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_11
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 942
+        width: 256
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb08a48c78a7b084d9f3918edd08ee44
+      internalID: -1671527368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_12
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 519
+        width: 267
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f16f2395ceb824dad2f22bd3ec5ac1
+      internalID: -1794431432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_13
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 519
+        width: 264
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b9286f15645794cbc96344366b547c
+      internalID: 256909437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_14
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 519
+        width: 262
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f693cbf6650d970459a01522116dc628
+      internalID: 2049843077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_15
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 519
+        width: 252
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edab5568069f4c4186a27d7f224ec19
+      internalID: -1409718769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_16
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 98
+        width: 248
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15b44445c6e00445be4a1583616a5e9
+      internalID: 1639377286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr1_walking_17
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 98
+        width: 246
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57395e64370e7ab49b569990f3438f86
+      internalID: -1054385416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +506,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      satyr1_walking_7: -360197544
+      satyr1_walking_13: 256909437
+      satyr1_walking_2: -749436996
+      satyr1_walking_3: -2040097701
+      satyr1_walking_4: -744539996
+      satyr1_walking_12: -1794431432
+      satyr1_walking_10: -1642250470
+      satyr1_walking_1: -829530710
+      satyr1_walking_5: 1688174618
+      satyr1_walking_11: -1671527368
+      satyr1_walking_17: -1054385416
+      satyr1_walking_15: -1409718769
+      satyr1_walking_0: 654206629
+      satyr1_walking_14: 2049843077
+      satyr1_walking_6: -1167137001
+      satyr1_walking_8: 474477265
+      satyr1_walking_9: -720143729
+      satyr1_walking_16: 1639377286
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
