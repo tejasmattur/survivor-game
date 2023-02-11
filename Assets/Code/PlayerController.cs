@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+		Timer.instance.BeginTimer();
     }
 
     void FixedUpdate() {
