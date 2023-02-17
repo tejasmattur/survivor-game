@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: golem2_dying_0
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1475
+        width: 431
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81760b6ea5b36484eaab1b0ffdc6f7b0
+      internalID: 1229910683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_1
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1477
+        width: 421
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d0a3c80a35cc64782b2026d8e0a597
+      internalID: 1122176278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_2
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 1478
+        width: 411
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e971d1e7af319b4e851351f9580484d
+      internalID: -1507649915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_3
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1456
+        width: 354
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535e915cde8e2da4cadfee66a54aa838
+      internalID: -2091884582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_4
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 997
+        width: 418
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f493d003cdfad514b85d9d5884d022e5
+      internalID: -491593296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_5
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 997
+        width: 396
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa5268d57753eb48850856bd93573ac
+      internalID: 918133251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_6
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 999
+        width: 373
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c701e560c41cf542a3332ca4e8d68ec
+      internalID: -1019567875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_7
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 975
+        width: 354
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c40d29ec74e8a7498512075f68abf5f
+      internalID: -1053463809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_8
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 522
+        width: 349
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949bbccc891420a4d80f948279694372
+      internalID: -1049568157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_9
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 519
+        width: 319
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc36023bf4a91640a8eedc63ba629eb
+      internalID: -1353727259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_10
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 502
+        width: 337
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 439cbcbcfab587149ae3f2d9c5df4e4d
+      internalID: -2005030094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_11
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 492
+        width: 354
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e497e62da3f35b34bb05a5e75b363e02
+      internalID: -725108850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_12
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 10
+        width: 347
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1537ad27c618894ea8e5c7ee0014114
+      internalID: 669959817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_13
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 10
+        width: 348
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c13f3021cb20548baaa3edb0c34bab
+      internalID: -1096718247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_dying_14
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 10
+        width: 354
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf6254bb42113540928250ca86d8f5e
+      internalID: 380096635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +443,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      golem2_dying_7: -1053463809
+      golem2_dying_1: 1122176278
+      golem2_dying_13: -1096718247
+      golem2_dying_3: -2091884582
+      golem2_dying_14: 380096635
+      golem2_dying_8: -1049568157
+      golem2_dying_6: -1019567875
+      golem2_dying_10: -2005030094
+      golem2_dying_4: -491593296
+      golem2_dying_0: 1229910683
+      golem2_dying_11: -725108850
+      golem2_dying_12: 669959817
+      golem2_dying_5: 918133251
+      golem2_dying_2: -1507649915
+      golem2_dying_9: -1353727259
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

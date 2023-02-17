@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: minotaur3_waling_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1999
+        width: 472
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ba18e76eaf5df4c888b068bc603367
+      internalID: 1065848466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_1
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 2000
+        width: 453
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f538b49aa388d408d0dd17d194f37e
+      internalID: 283320914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_2
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 2002
+        width: 435
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e007fe90f7fcecf46b182576ba88f813
+      internalID: 625300492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_3
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 2004
+        width: 426
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce9ebeac1c4d7a428d773a9b9c0c454
+      internalID: 1345462133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 1511
+        width: 421
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0beae0c6aec9fe24dbc2d19899109467
+      internalID: 935096634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_5
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1515
+        width: 419
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fc85067333dba429c4cb5b36223b27
+      internalID: 290435462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_6
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1515
+        width: 417
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348888f6b5d9f9a4ca561dc6413a346e
+      internalID: -1232069964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_7
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 1511
+        width: 430
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca3b30ab67234f45968c2496e8a96d8
+      internalID: 1541966894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_8
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1020
+        width: 408
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc7878cd0042ad42b7624147300282a
+      internalID: 1908450070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_9
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1017
+        width: 393
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09dc93fded85a35418942a0c88dc5264
+      internalID: 1054699843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_10
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1016
+        width: 377
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cacfd1697cf7a74fa230a33aee658da
+      internalID: 1930256168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_11
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 1016
+        width: 450
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415e1e71d4e588847bc01db204517d58
+      internalID: 1313218010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 523
+        width: 359
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5918fab08d2a5264f92506110ede902c
+      internalID: -739692094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_13
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 523
+        width: 368
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1f47a065ea089418fd729772f14d73
+      internalID: 1743437150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_14
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 525
+        width: 383
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5a14cceb5308a429c90b0eaa34d868
+      internalID: 1408660064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 35
+        width: 398
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89657da4bce69c946807b0e594153184
+      internalID: 1711549524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_16
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 38
+        width: 412
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf74b00ab3b063045884917426fd3c48
+      internalID: 1676176980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur3_waling_17
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 39
+        width: 421
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7183e1b1a5e6e1943a6894f3a9a25c7f
+      internalID: 709493788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +506,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minotaur3_waling_17: 709493788
+      minotaur3_waling_16: 1676176980
+      minotaur3_waling_1: 283320914
+      minotaur3_waling_11: 1313218010
+      minotaur3_waling_3: 1345462133
+      minotaur3_waling_8: 1908450070
+      minotaur3_waling_9: 1054699843
+      minotaur3_waling_10: 1930256168
+      minotaur3_waling_0: 1065848466
+      minotaur3_waling_4: 935096634
+      minotaur3_waling_5: 290435462
+      minotaur3_waling_6: -1232069964
+      minotaur3_waling_12: -739692094
+      minotaur3_waling_14: 1408660064
+      minotaur3_waling_7: 1541966894
+      minotaur3_waling_2: 625300492
+      minotaur3_waling_15: 1711549524
+      minotaur3_waling_13: 1743437150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

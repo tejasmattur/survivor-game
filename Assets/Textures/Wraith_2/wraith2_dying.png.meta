@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wraith2_dying_0
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1361
+        width: 212
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd4f7b31f4986c4db18f2886195d620
+      internalID: 68878438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1357
+        width: 214
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde152ba74704f34dad479b15cde6daf
+      internalID: 1905615440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_2
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 1355
+        width: 213
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ec9bc82d494cb47b3e80d326727cd3
+      internalID: -1718175291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_3
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 1319
+        width: 304
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db172ccf040e4f42a7856b5814a4e4f
+      internalID: 1719580216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 932
+        width: 213
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a498e4470e9402418ecf882710967f3
+      internalID: -166423213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_5
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 920
+        width: 214
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ee0a46e1e9aca4bbcb6c2a851861af
+      internalID: -1395265268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_6
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 915
+        width: 215
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a7773b12eee7247a83b6a149768f44
+      internalID: -2018320140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_7
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 896
+        width: 304
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09b60941e6337147a03a140c37def42
+      internalID: 1433339391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_8
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 491
+        width: 214
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62b8261ad1f67d419008e311ce08def
+      internalID: -60533070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_9
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 491
+        width: 220
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe87475e3e05374e97f35860b9616c5
+      internalID: -1400647190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_10
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 499
+        width: 240
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f9b484a49b48348af13f0fdde41342
+      internalID: -57140452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_11
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 475
+        width: 304
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78936aec834b44843b6c7693f187c772
+      internalID: 577124795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_12
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 83
+        width: 275
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5ef03b8834e4546a89b1f9a49c7fe8
+      internalID: -774296104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_13
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 63
+        width: 300
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eddbe9232429794fb931759da2b27ed
+      internalID: -137344488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_dying_14
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 52
+        width: 304
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184e2971ba0222e42b4ec678940069b7
+      internalID: 445672037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +443,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wraith2_dying_0: 68878438
+      wraith2_dying_14: 445672037
+      wraith2_dying_6: -2018320140
+      wraith2_dying_3: 1719580216
+      wraith2_dying_13: -137344488
+      wraith2_dying_2: -1718175291
+      wraith2_dying_4: -166423213
+      wraith2_dying_5: -1395265268
+      wraith2_dying_12: -774296104
+      wraith2_dying_8: -60533070
+      wraith2_dying_1: 1905615440
+      wraith2_dying_11: 577124795
+      wraith2_dying_7: 1433339391
+      wraith2_dying_9: -1400647190
+      wraith2_dying_10: -57140452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

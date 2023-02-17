@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: minotaur2_blinking_0
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1516
+        width: 428
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba004687fee1c2489f2a6bc85b1b98f
+      internalID: -1014407204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_1
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1516
+        width: 430
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97cafc7d1d4da248ac220273618904e
+      internalID: 110980649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_2
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 1516
+        width: 432
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af9b4653bd05aa458bba8c054c0acb7
+      internalID: -665380824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1025
+        width: 429
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5843e4fd464b1f4cb93c15325b2a53b
+      internalID: -609771316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_4
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1025
+        width: 430
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a1e73569cb00c469b221d6cb9c342b
+      internalID: 917802842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_5
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1025
+        width: 431
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c50eb6ac225ff4c80a45027c719d50
+      internalID: 389711540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 532
+        width: 430
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b934c49c90bff498e6ff61f6e50d0e
+      internalID: -2022461276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_7
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 532
+        width: 430
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47653249ba7c3ea4099d14ba1ddb38dc
+      internalID: 1514968998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_8
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 532
+        width: 430
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6429bb0eb9406144b92d29b22e8a3c90
+      internalID: 71102304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 40
+        width: 432
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52749a0ac95738946b81d161daaf2bad
+      internalID: -1424998130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_10
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 40
+        width: 431
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b643dc4cddbbb3d47ad53deb8ea14206
+      internalID: -1769956063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur2_blinking_11
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 40
+        width: 429
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c878668989480240989f170392ed36b
+      internalID: 1518195335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +380,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minotaur2_blinking_9: -1424998130
+      minotaur2_blinking_5: 389711540
+      minotaur2_blinking_0: -1014407204
+      minotaur2_blinking_3: -609771316
+      minotaur2_blinking_8: 71102304
+      minotaur2_blinking_1: 110980649
+      minotaur2_blinking_2: -665380824
+      minotaur2_blinking_4: 917802842
+      minotaur2_blinking_7: 1514968998
+      minotaur2_blinking_6: -2022461276
+      minotaur2_blinking_10: -1769956063
+      minotaur2_blinking_11: 1518195335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

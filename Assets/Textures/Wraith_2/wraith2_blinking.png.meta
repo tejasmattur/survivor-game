@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wraith2_blinking_0
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 939
+        width: 214
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1ccb08f1d27f34f9a04ed48c1c7113
+      internalID: -1621048547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_1
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 938
+        width: 214
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaad52f476b0b274fb138003e8504a9f
+      internalID: 742229928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_2
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 939
+        width: 214
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f31a2b057911d478dfc02f4296631b
+      internalID: -1733478435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_3
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 942
+        width: 214
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39f8cad4c66e084cab4bf3dd9c93f29
+      internalID: -802142345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 518
+        width: 215
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e4ec5e5e3f39f4ebf7e2083591bde8
+      internalID: -838563093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_5
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 519
+        width: 215
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f1a0d1f64cecf4d8b23aaf85b9afde
+      internalID: 1697825668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_6
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 520
+        width: 215
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2948762c3e536aa41b4af5681cb8b770
+      internalID: 1065707829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_7
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 519
+        width: 215
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84033ed4e15dee1478b59f01124b279a
+      internalID: -1999303228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_8
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 99
+        width: 214
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119d60e04bd74ec47ad0b2fe44d51559
+      internalID: -944386034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_9
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 99
+        width: 214
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d833b7e158af7745a7e3e44c6dae4a0
+      internalID: -564413276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_10
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 99
+        width: 214
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3382d86b25aaf9c498102445dd9ba3f9
+      internalID: 295103029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith2_blinking_11
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 96
+        width: 215
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6d241a0ca497e49a903079390f4d94
+      internalID: -1460862292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +380,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wraith2_blinking_11: -1460862292
+      wraith2_blinking_3: -802142345
+      wraith2_blinking_0: -1621048547
+      wraith2_blinking_8: -944386034
+      wraith2_blinking_9: -564413276
+      wraith2_blinking_4: -838563093
+      wraith2_blinking_2: -1733478435
+      wraith2_blinking_10: 295103029
+      wraith2_blinking_1: 742229928
+      wraith2_blinking_7: -1999303228
+      wraith2_blinking_6: 1065707829
+      wraith2_blinking_5: 1697825668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

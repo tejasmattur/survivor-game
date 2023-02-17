@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: golem3_attack_0
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1476
+        width: 425
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0762deba73deac846a889047be6a4221
+      internalID: 161940914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_1
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1476
+        width: 402
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53451107c621bd04cbace044d4479fa3
+      internalID: -1143377908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_2
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 1476
+        width: 533
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c4ba7053d0c1745a0af598e1c8a460
+      internalID: 2013613637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 994
+        width: 363
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b6d60404b39014da3a3d5075a79d79
+      internalID: 1081783843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_4
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 994
+        width: 341
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45e23ad34d0d6e4b8d855e59e202e40
+      internalID: 822533116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_5
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 994
+        width: 511
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2a6c1b32dede2479bfc6197c53187d
+      internalID: 1299234248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_6
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 512
+        width: 336
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf968787428beb4c85448b5a7500362
+      internalID: -1300476994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_7
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 512
+        width: 329
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4ac1d360c85d244b810b527ab4931b
+      internalID: 265569031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_8
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 512
+        width: 490
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845d8925c60c4664e89467f89e3dfc86
+      internalID: -965986085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_9
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 31
+        width: 323
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb68e9eddb5b43f4a8dbdad32eba571b
+      internalID: -550362514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_10
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 31
+        width: 399
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ffcb70dc6457949928c675dc80f2e8
+      internalID: -1386699094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_attack_11
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 31
+        width: 462
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca03feb3fa9cc264989269f9c5135642
+      internalID: 1409233850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +380,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      golem3_attack_2: 2013613637
+      golem3_attack_11: 1409233850
+      golem3_attack_5: 1299234248
+      golem3_attack_3: 1081783843
+      golem3_attack_8: -965986085
+      golem3_attack_10: -1386699094
+      golem3_attack_4: 822533116
+      golem3_attack_7: 265569031
+      golem3_attack_0: 161940914
+      golem3_attack_9: -550362514
+      golem3_attack_6: -1300476994
+      golem3_attack_1: -1143377908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
