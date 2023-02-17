@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: golem3_blinking_0
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1476
+        width: 425
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143a42c1170111d4a8b6df5b79825109
+      internalID: 808556249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_1
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1476
+        width: 426
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3dc0d98569c30428ee86cac76df0b6
+      internalID: 1644556890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_2
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 1476
+        width: 429
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f666eaf88fadf9b4ab4bb2b3c88268a3
+      internalID: 1963154669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 994
+        width: 426
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6a67256448cc74ebe38ffd61b3adfc
+      internalID: -1777763390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_4
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 994
+        width: 427
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ca4188c1f68f34ba731dc350e2f49f
+      internalID: 551095675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_5
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 994
+        width: 428
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d7294ebe3603844a26083a9e97c877
+      internalID: 1911328448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 512
+        width: 427
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56d8bc50a5ba9c4580ce31e86f2cb3b
+      internalID: 1435713197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_7
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 512
+        width: 428
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce75ced91ae9ad4aa9ee076db5e3313
+      internalID: 1845207641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_8
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 512
+        width: 427
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce55fea185c32e64bbf9c752d2d9a770
+      internalID: 1555976334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 31
+        width: 429
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc149cb89d15cbd41bc1ce48124a0b74
+      internalID: -379215343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_10
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 31
+        width: 428
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d858f84a8724b4ab731652db7739e4
+      internalID: 168475033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem3_blinking_11
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 31
+        width: 425
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22689fe2f9b5a9545b1830a2f389db90
+      internalID: 1480778747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +380,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      golem3_blinking_4: 551095675
+      golem3_blinking_10: 168475033
+      golem3_blinking_9: -379215343
+      golem3_blinking_11: 1480778747
+      golem3_blinking_1: 1644556890
+      golem3_blinking_8: 1555976334
+      golem3_blinking_7: 1845207641
+      golem3_blinking_6: 1435713197
+      golem3_blinking_5: 1911328448
+      golem3_blinking_3: -1777763390
+      golem3_blinking_0: 808556249
+      golem3_blinking_2: 1963154669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

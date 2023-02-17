@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: golem2_walking_0
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1952
+        width: 475
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2575255e983e3404097e161d8f99ef10
+      internalID: -1196311277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_1
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1952
+        width: 457
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3be07fe0f271741903e3d73d276649
+      internalID: 1095179171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_2
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1952
+        width: 435
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e4cbc7906e280449d008697c5aa9f5
+      internalID: -34256030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_3
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 1955
+        width: 408
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb597adb6e43f4b4b9d239c14c118d49
+      internalID: 1086316379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_4
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1471
+        width: 412
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab1b4af7c2cb9a49a1d24d52d838d7a
+      internalID: 1836890206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_5
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1474
+        width: 395
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e9e6bd6d726ce46b409dc4245d5905
+      internalID: -735484816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_6
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 1474
+        width: 387
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3640bd1ecb7c741a1804525dfe42c6
+      internalID: -1152894047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_7
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 1469
+        width: 430
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f055f7d8668ad419a45222b81e9919
+      internalID: -1181546586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_8
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 989
+        width: 378
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963f4cc4cf0522c4380c6efa9253bb8f
+      internalID: 122164023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_9
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 987
+        width: 368
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdae10c7a8152f418c920d9a6f6de2d
+      internalID: -2099251920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_10
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 987
+        width: 360
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5307a5fbf3d608e439128e3777900112
+      internalID: 1909126934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_11
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 987
+        width: 453
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abf6c286cb9799429ef54486a96f3bc
+      internalID: 743664309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_12
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 506
+        width: 351
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71f6e8cc7b7fc84e8354adb0976fc26
+      internalID: -2028437624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_13
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 505
+        width: 359
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3948930781e5ab418fd4fdb55ca72a5
+      internalID: -2092965019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_14
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 505
+        width: 367
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a887d7ba593c92940bedc3c24f35130a
+      internalID: -1318278485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_15
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 25
+        width: 377
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc2409e64f48c24b973548b0fc3018b
+      internalID: 1238572306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_16
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 27
+        width: 385
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5166eb1540898469fc10605e6b72e4
+      internalID: -406879929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golem2_walking_17
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 30
+        width: 394
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7722bb50a04e2b48afd38f4370ad0d5
+      internalID: -627377865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +506,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      golem2_walking_10: 1909126934
+      golem2_walking_11: 743664309
+      golem2_walking_13: -2092965019
+      golem2_walking_16: -406879929
+      golem2_walking_2: -34256030
+      golem2_walking_8: 122164023
+      golem2_walking_14: -1318278485
+      golem2_walking_7: -1181546586
+      golem2_walking_17: -627377865
+      golem2_walking_0: -1196311277
+      golem2_walking_9: -2099251920
+      golem2_walking_15: 1238572306
+      golem2_walking_4: 1836890206
+      golem2_walking_3: 1086316379
+      golem2_walking_12: -2028437624
+      golem2_walking_6: -1152894047
+      golem2_walking_5: -735484816
+      golem2_walking_1: 1095179171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

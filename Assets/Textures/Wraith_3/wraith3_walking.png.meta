@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wraith3_walking_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 945
+        width: 218
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f18a53039441774ea0a2b77998609b8
+      internalID: -1685750583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_1
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 945
+        width: 218
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2e8fba4f6ec8b4584a11e8e760b30e
+      internalID: 1349148904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_2
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 946
+        width: 218
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303f87914a8479647821b1fcb212310a
+      internalID: 2136582027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_3
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 946
+        width: 217
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65b7ed645a615348a6afe3c963171dc
+      internalID: 1075731892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 524
+        width: 218
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b566ff3b7e585f438d3a6e797428113
+      internalID: -190282440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_5
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 525
+        width: 218
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e015d3dc9815ec34bb7244bfdbc7d443
+      internalID: 1269560277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_6
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 525
+        width: 217
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006791338d90e474dbea18c677a787f7
+      internalID: -1332278154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_7
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 524
+        width: 217
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a181e07d79ee1604d812cd38b5fcd558
+      internalID: 1530818503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_8
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 104
+        width: 217
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c272199bc2fd404408aceaed59c9a20c
+      internalID: 1002412677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_9
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 103
+        width: 217
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0141af17af523724fad54be23cb188c3
+      internalID: 133956202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_10
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 103
+        width: 217
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd297ebd1b770814bb469a157530cef1
+      internalID: 202562912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_walking_11
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 101
+        width: 218
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519cb9ebfc6fb8e4385d8b83770a760f
+      internalID: 475542646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +380,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wraith3_walking_3: 1075731892
+      wraith3_walking_8: 1002412677
+      wraith3_walking_10: 202562912
+      wraith3_walking_11: 475542646
+      wraith3_walking_7: 1530818503
+      wraith3_walking_6: -1332278154
+      wraith3_walking_2: 2136582027
+      wraith3_walking_1: 1349148904
+      wraith3_walking_0: -1685750583
+      wraith3_walking_5: 1269560277
+      wraith3_walking_4: -190282440
+      wraith3_walking_9: 133956202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

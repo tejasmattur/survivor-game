@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: satyr2_dying_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1364
+        width: 276
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5287adb63c79140abbc2001926345f
+      internalID: 1370158416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_1
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1366
+        width: 266
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c554ba2b7e0bf48ac565e441cec24e
+      internalID: 621481734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_2
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1369
+        width: 257
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa9b7dc072d1494582cb046999b39d3
+      internalID: 1060130003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_3
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 1299
+        width: 270
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1273b3c932b3279428652cb677e79d94
+      internalID: 530312915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_4
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 948
+        width: 248
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ad016befc470c449dfebcca1fc9246
+      internalID: -1990502624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_5
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 948
+        width: 233
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd19f445a4726464ebc9326fbff4f1ca
+      internalID: 50670788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_6
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 948
+        width: 234
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9276aac273516aa4ab0f81bbac7ea5cb
+      internalID: 884194122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_7
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 877
+        width: 269
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0ad94f9413d8c48bede6a693acea91
+      internalID: 1029010268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 527
+        width: 234
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2477d7239d4f4b46ab4c5a99a6ee383
+      internalID: -1719510601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_9
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 524
+        width: 257
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d70f969dd1905240b66ec4b50d7b566
+      internalID: -1410460487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_10
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 517
+        width: 277
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113e2fad516c6554eb2a92bf714fdb9c
+      internalID: 274103817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_11
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 455
+        width: 270
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16bd5a5b7f00e254e9328173f766314c
+      internalID: -1620252765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 86
+        width: 284
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3fd313bc5d926499107c5bc94937c3
+      internalID: -2130520406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_13
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 64
+        width: 280
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95256b2d9e410b949b617874a47f80cd
+      internalID: -103203509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: satyr2_dying_14
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 33
+        width: 269
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ddc6b2b0798354e80ea49fedb16e13
+      internalID: -1485166380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +443,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      satyr2_dying_7: 1029010268
+      satyr2_dying_3: 530312915
+      satyr2_dying_6: 884194122
+      satyr2_dying_8: -1719510601
+      satyr2_dying_2: 1060130003
+      satyr2_dying_9: -1410460487
+      satyr2_dying_0: 1370158416
+      satyr2_dying_1: 621481734
+      satyr2_dying_10: 274103817
+      satyr2_dying_12: -2130520406
+      satyr2_dying_11: -1620252765
+      satyr2_dying_13: -103203509
+      satyr2_dying_5: 50670788
+      satyr2_dying_14: -1485166380
+      satyr2_dying_4: -1990502624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: minotaur1_dying_0
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1515
+        width: 434
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f4ad920788a5d42af7771f9d4bf534
+      internalID: 464973408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_1
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 1515
+        width: 428
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaddb25fa90b5a449ee427548b47600
+      internalID: 342976470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_2
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 1518
+        width: 425
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b87b4721fa8a8c439bc29c28548b7a9
+      internalID: -944579874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_3
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 1482
+        width: 401
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfc288ade3a9dc44a5de70fd92afab4
+      internalID: -136849680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_4
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1029
+        width: 419
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39213893cf22d9f47a248889169eee10
+      internalID: 234908649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_5
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1028
+        width: 412
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f097ef5ec20ea48b9b8cb734edbfd7
+      internalID: 1102205889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_6
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 1029
+        width: 413
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c4b7fa204d0ce43a850cbbd6c35760
+      internalID: 1210062664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_7
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 991
+        width: 401
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b04873b890a1040a0ac95dc9fc9aa1
+      internalID: -689324144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 541
+        width: 396
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf6a61d78e2a9749bb4aa1fc7e4ccb3
+      internalID: -1218345979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_9
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 543
+        width: 394
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb88f964f2736194dae36b975ba64509
+      internalID: -2142697257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_10
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 539
+        width: 410
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a9c6033d10e304684c0f9ce21f63ab
+      internalID: 516112640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_11
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 499
+        width: 401
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d854e3d4c345f49b5157f32dbdf24a
+      internalID: -794048129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_12
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 37
+        width: 418
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e524e7a419bb2c47b1c3d0f0066d193
+      internalID: -757704777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_13
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 34
+        width: 408
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea32dad2898cb3a488d8ac6eb7f7a348
+      internalID: -1747753187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: minotaur1_dying_14
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 6
+        width: 401
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e231a78c25dd5a446a4c4d65c2315d42
+      internalID: 553649222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +443,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      minotaur1_dying_12: -757704777
+      minotaur1_dying_10: 516112640
+      minotaur1_dying_11: -794048129
+      minotaur1_dying_14: 553649222
+      minotaur1_dying_0: 464973408
+      minotaur1_dying_2: -944579874
+      minotaur1_dying_3: -136849680
+      minotaur1_dying_1: 342976470
+      minotaur1_dying_5: 1102205889
+      minotaur1_dying_4: 234908649
+      minotaur1_dying_8: -1218345979
+      minotaur1_dying_13: -1747753187
+      minotaur1_dying_6: 1210062664
+      minotaur1_dying_7: -689324144
+      minotaur1_dying_9: -2142697257
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

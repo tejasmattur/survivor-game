@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wraith3_attack_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 939
+        width: 217
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf53ffc0eb5e09444bd01bb04cd6c51a
+      internalID: 656114977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_1
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 943
+        width: 217
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080d31631741ea24aa0e7af739e1bbd7
+      internalID: -1289873352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_2
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 948
+        width: 216
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc62c6c1f7c2d6408c9bdb9484aa48f
+      internalID: -221915987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_3
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 930
+        width: 220
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b696133441adf141bb235d963c53c9d
+      internalID: 483819000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_4
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 529
+        width: 216
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658a1fb3d3e12614a96341e0d1f12f0e
+      internalID: -877722140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_5
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 529
+        width: 216
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e14e5db7796e914eb208cbfb0c2e3bc
+      internalID: -522500454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_6
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 530
+        width: 214
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f21bdd30a77a884190e181ad71bbebd
+      internalID: 1826017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_7
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 510
+        width: 218
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2761d823a31f39409611c3cd5c99db9
+      internalID: 1801665559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_8
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 108
+        width: 214
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fe3e33ed38e704cb8612c37784091b
+      internalID: 1801269634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_9
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 100
+        width: 215
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4202c6db510bb0f4682084d54ad1cd1a
+      internalID: -2077437077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_10
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 90
+        width: 218
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c495e2ac7d86cb4ea6ab153b34d65a2
+      internalID: 1703339701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith3_attack_11
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 91
+        width: 219
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd3d4901c6b9824a8d34a3ea3a33dae
+      internalID: 714763837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +380,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wraith3_attack_9: -2077437077
+      wraith3_attack_4: -877722140
+      wraith3_attack_3: 483819000
+      wraith3_attack_6: 1826017
+      wraith3_attack_0: 656114977
+      wraith3_attack_10: 1703339701
+      wraith3_attack_8: 1801269634
+      wraith3_attack_1: -1289873352
+      wraith3_attack_2: -221915987
+      wraith3_attack_5: -522500454
+      wraith3_attack_7: 1801665559
+      wraith3_attack_11: 714763837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
