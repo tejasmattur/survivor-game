@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 461970823}
   m_Layer: 8
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3417,7 +3417,7 @@ GameObject:
   - component: {fileID: 1740117555}
   - component: {fileID: 1740117554}
   - component: {fileID: 1740117553}
-  - component: {fileID: 1740117552}
+  - component: {fileID: 1740117557}
   m_Layer: 10
   m_Name: Minotaur_1
   m_TagString: Enemy
@@ -3425,22 +3425,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1740117552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740117551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c4aa808232d31a4ca32503b343c2c0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HitPoints: 0
-  maxHealth: 10
-  healthBar: {fileID: 1189231543}
-  spawner: {fileID: 0}
 --- !u!70 &1740117553
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3571,6 +3555,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740117557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740117551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4784d281e1d599d4ea31b24b66bb0e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitPoints: 0
+  maxHealth: 10
+  speed: 2
+  healthBar: {fileID: 1189231543}
+  spawner: {fileID: 0}
 --- !u!1 &1822462623
 GameObject:
   m_ObjectHideFlags: 0

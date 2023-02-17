@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlayerController : MonoBehaviour
 	Rigidbody2D _rigidbody2D;
 
 	// Configuration
-    public float speed;	
+    public float speed;
     SpriteRenderer sprite;
     Animator animator;
 
@@ -19,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public int maxSpears = 3;
     public int spearsLeft = 3;
     public float cooldown = 1.0f;
-    public float shotTime = 2.0f; 
+    public float shotTime = 2.0f;
     private float nextFire = 0.0f;
 
     // HUD
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-		Timer.instance.BeginTimer();
+				Timer.instance.BeginTimer();
     }
 
     void FixedUpdate() {
@@ -77,16 +78,16 @@ public class PlayerController : MonoBehaviour
     	GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
     	Vector2 cur_pos = transform.position;
 
+			// update attack animation
     	if (!animator.GetBool("Attack") && animator.GetFloat("Speed") < 0.1 && enemies.Length != 0) {
     		animator.SetBool("Attack", true);
-    		//Debug.Log(animator.GetBool("Attack"));
     	}
     	else if (animator.GetFloat("Speed") > 0.1) {
     		animator.SetBool("Attack", false);
-    		// Debug.Log("walking");
     	}
-    	//Debug.Log(animator.GetFloat("Speed"));
 
+			// attack closest enemy first
+			enemies = enemies.OrderBy((e) => (e.transform.position - transform.position).sqrMagnitude).ToArray();
     	for (int i=0; i < enemies.Length; i++) {
     		Vector2 e_pos = enemies[i].transform.position;
     		Vector2 enemy_dir = e_pos - cur_pos;
@@ -99,25 +100,24 @@ public class PlayerController : MonoBehaviour
     			GameObject newSpear = Instantiate(spearPrefab);
     			newSpear.transform.position = cur_pos + enemy_dir;
     			newSpear.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
-    			spearsLeft -= 1;	
+    			spearsLeft -= 1;
 
     			if (spearsLeft == 0) { // Cool down
 	    			spearsLeft = maxSpears;
 	    			nextFire = Time.time + cooldown;
-	    		}  
+	    		}
 	    		else {
 	    			nextFire = Time.time + shotTime/maxSpears;
-	    		}	
+	    		}
     		}
-    		
+
     	}
     }
- 
- 	 private float getBetweenAngle(Vector2 v1, Vector2 v2) {
 
+ 	 private float getBetweenAngle(Vector2 v1, Vector2 v2) {
  	 	 Vector2 v1_r90 = new Vector2(-v1.y, v1.x);
 	     float sign = (Vector2.Dot(v1_r90, v2) < 0) ? -1.0f : 1.0f;
 	     return Vector2.Angle(v1, v2) * sign;
-
 	 }
+
 }
