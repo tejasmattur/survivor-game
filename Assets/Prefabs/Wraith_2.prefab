@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7720933505484291424}
   - component: {fileID: 5142816199651123874}
   - component: {fileID: 3173866454482589733}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wraith_2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

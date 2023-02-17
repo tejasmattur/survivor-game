@@ -6,9 +6,9 @@ using System.Linq;
 public class PlayerController : MonoBehaviour
 {
     // Outlet
-	Rigidbody2D _rigidbody2D;
-
-	// Configuration
+		Rigidbody2D _rigidbody2D;
+		protected float HitPoints;
+		public float maxHealth = 10;
     public float speed;
     SpriteRenderer sprite;
     Animator animator;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private float nextFire = 0.0f;
 
     // HUD
-	public HealthBar HealthBar;
+		public HealthBar healthBar;
 
 
 
@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
 				Timer.instance.BeginTimer();
+				HitPoints = maxHealth;
+	      healthBar.setHealth(HitPoints, maxHealth);
     }
 
     void FixedUpdate() {
@@ -112,6 +114,15 @@ public class PlayerController : MonoBehaviour
     		}
 
     	}
+    }
+
+		// collide with enemies
+	  void OnCollisionEnter2D(Collision2D other) {
+        var enemy = other.collider.GetComponent<BaseEnemy>();
+        if(enemy){
+					HitPoints -= enemy.collisonDamage;
+					healthBar.setHealth(HitPoints, maxHealth);
+        }
     }
 
  	 private float getBetweenAngle(Vector2 v1, Vector2 v2) {

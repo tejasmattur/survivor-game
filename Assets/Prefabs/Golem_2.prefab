@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3200248110826637378}
   - component: {fileID: 3200248110826637379}
   - component: {fileID: 6166173137782373802}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Golem_2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

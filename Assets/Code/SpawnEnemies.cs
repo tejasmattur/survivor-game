@@ -19,7 +19,7 @@ public class SpawnEnemies : MonoBehaviour {
              Minotaur = enemies[0];
         }
         enemyCount = enemies.Length;
-        Debug.Log(enemies.Length);
+        // Debug.Log(enemies.Length);
         StartCoroutine(EnemySpawner());
     }
 

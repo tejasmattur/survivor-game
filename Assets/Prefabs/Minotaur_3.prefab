@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8983502352920725188}
   - component: {fileID: 8983502352920725187}
   - component: {fileID: 8983502352920725186}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Minotaur_3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1103695159262599204}
   - component: {fileID: 5749790584056328960}
   - component: {fileID: 585951979588303456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Satyr_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
