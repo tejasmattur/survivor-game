@@ -20,14 +20,12 @@ public class Enemy : MonoBehaviour
 
     // Update is called once per frame
     public void takeDamage(float damage)
-    {
+    {   
 
         HitPoints -= damage;
         healthBar.setHealth(HitPoints, maxHealth);
-        if(HitPoints == 0){
+        if(HitPoints == 0) {
             Destroy(gameObject);
-            spawner.enemyCount -= 1;
         }
-        
     }
 }
