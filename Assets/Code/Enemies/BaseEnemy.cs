@@ -27,8 +27,16 @@ public class BaseEnemy : MonoBehaviour
         HitPoints -= damage;
         healthBar.setHealth(HitPoints, maxHealth);
         if(HitPoints <= 0){
+            //if(gameObject.tag == "Golem")
+            //{
+            //    spawner.Golem = GameObject.FindGameObjectWithTag("Golem");
+            //}
+            //if(gameObject.tag == "Minotaur")
+            //{
+            //    spawner.Minotaur = GameObject.FindGameObjectWithTag("Minotaur");
+            //}
+            //spawner.enemyCount--;
             Destroy(gameObject);
-            spawner.enemyCount -= 1;
         }
     }
 
