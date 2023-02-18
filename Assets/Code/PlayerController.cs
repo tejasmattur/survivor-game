@@ -77,8 +77,12 @@ public class PlayerController : MonoBehaviour
     	}
 
     	// Check for enemies
-    	GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-    	Vector2 cur_pos = transform.position;
+    	GameObject[] minotaurs = GameObject.FindGameObjectsWithTag("Minotaur");
+        GameObject[] golems = GameObject.FindGameObjectsWithTag("Golem");
+
+        GameObject[] enemies = minotaurs.Concat(golems).ToArray();
+
+        Vector2 cur_pos = transform.position;
 
 			// update attack animation
     	if (!animator.GetBool("Attack") && animator.GetFloat("Speed") < 0.1 && enemies.Length != 0) {
