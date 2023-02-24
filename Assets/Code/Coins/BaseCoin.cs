@@ -28,7 +28,14 @@ public class BaseCoin : MonoBehaviour
             //CoinManager.instance.AddCoins(coinValue);
             //playerController.coinCount += coinValue;
             player.GetComponent<PlayerController>().coinCount += coinValue;
+            UpdateCoinText();
             Destroy(gameObject);
         }
     }
+
+    void UpdateCoinText()
+    {
+        player.GetComponent<PlayerController>().coinText.text = "Coins: " + player.GetComponent<PlayerController>().coinCount.ToString();
+    }
+
 }

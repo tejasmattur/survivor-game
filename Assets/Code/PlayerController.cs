@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using TMPro;
 public class PlayerController : MonoBehaviour
 {
     // Outlet
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public float shotTime = 2.0f;
     private float nextFire = 0.0f;
     public int coinCount = 0;
+	public TMP_Text coinText;
 
     // HUD
 		public HealthBar healthBar;
