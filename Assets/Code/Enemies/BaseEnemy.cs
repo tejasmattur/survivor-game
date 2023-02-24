@@ -11,6 +11,7 @@ public class BaseEnemy : MonoBehaviour
     public float speed;
     public float collisonDamage = 1;
     protected Rigidbody2D _rigidbody2D;
+    SpriteRenderer sprite;
     protected GameObject player;
     public HealthBar healthBar;
     public SpawnEnemies spawner;
@@ -20,6 +21,7 @@ public class BaseEnemy : MonoBehaviour
       HitPoints = maxHealth;
       healthBar.setHealth(HitPoints, maxHealth);
       _rigidbody2D = GetComponent<Rigidbody2D>();
+      sprite = GetComponent<SpriteRenderer>();
       player = GameObject.FindGameObjectWithTag("Player");
     }
 
