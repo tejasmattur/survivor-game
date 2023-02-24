@@ -50,7 +50,6 @@ public class SpawnEnemies : MonoBehaviour {
 
         // choose what enemy to spawn
         float probability = Random.Range(0,100);
-        Debug.Log(probability);
         GameObject enemy_to_spawn;
         if (probability < 70) { // golems get spawned more often
           enemy_to_spawn = EnemyPrefabs[0];
