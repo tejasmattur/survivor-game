@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     // Outlet
-	Rigidbody2D _rigidbody2D;
-	protected float HitPoints;
-	public float maxHealth = 10;
+		Rigidbody2D _rigidbody2D;
+		protected float HitPoints;
+		public float maxHealth = 10;
     public float speed;
     SpriteRenderer sprite;
     Animator animator;
     public GameOver gameOver;
+
     // Weapons
     public GameObject spearPrefab;
 
@@ -32,12 +33,12 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
-        sprite = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
-		HitPoints = maxHealth;
-	    healthBar.setHealth(HitPoints, maxHealth);
-     
+			_rigidbody2D = GetComponent<Rigidbody2D>();
+			sprite = GetComponent<SpriteRenderer>();
+			animator = GetComponent<Animator>();
+			HitPoints = maxHealth;
+			healthBar.setHealth(HitPoints, maxHealth);
+
     }
 
     void FixedUpdate() {
@@ -78,12 +79,7 @@ public class PlayerController : MonoBehaviour
     	}
 
     	// Check for enemies
-    	GameObject[] minotaurs = GameObject.FindGameObjectsWithTag("Minotaur");
-        GameObject[] golems = GameObject.FindGameObjectsWithTag("Golem");
-
-        GameObject[] enemies = minotaurs.Concat(golems).ToArray();
-
-        Vector2 cur_pos = transform.position;
+    	GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
 			// update attack animation
     	if (!animator.GetBool("Attack") && animator.GetFloat("Speed") < 0.1 && enemies.Length != 0) {
@@ -94,6 +90,7 @@ public class PlayerController : MonoBehaviour
     	}
 
 			// attack closest enemy first
+			Vector2 cur_pos = transform.position;
 			enemies = enemies.OrderBy((e) => (e.transform.position - transform.position).sqrMagnitude).ToArray();
     	for (int i=0; i < enemies.Length; i++) {
     		Vector2 e_pos = enemies[i].transform.position;
@@ -129,8 +126,8 @@ public class PlayerController : MonoBehaviour
 			healthBar.setHealth(HitPoints, maxHealth);
 			// Restart Level when player health is 0
 			if(HitPoints == 0){
-                gameOver.gameOver();
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+          gameOver.gameOver();
+          //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 			}
         }
     }

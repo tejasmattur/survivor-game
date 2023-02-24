@@ -328,11 +328,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4784d281e1d599d4ea31b24b66bb0e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitPoints: 0
-  maxHealth: 10
-  speed: 0
+  maxHealth: 4
+  speed: 3
+  collisonDamage: 2
   healthBar: {fileID: 4949751934726186283}
   spawner: {fileID: 0}
+  coin: {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
 --- !u!1 &4949751934186311734
 GameObject:
   m_ObjectHideFlags: 0
