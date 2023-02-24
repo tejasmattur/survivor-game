@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class BaseCoin : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    protected GameObject player;
+
+    protected int coinValue = 1;
+    protected float dropProbability = 1;
+    //// Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
+    //// Update is called once per frame
+    //void Update()
+    //{
+
+    //}
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            // Increment total value and destroy the coin
+            //CoinManager.instance.AddCoins(coinValue);
+            //playerController.coinCount += coinValue;
+            player.GetComponent<PlayerController>().coinCount += coinValue;
+            Destroy(gameObject);
+        }
     }
 }

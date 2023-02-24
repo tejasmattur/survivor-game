@@ -14,6 +14,7 @@ public class BaseEnemy : MonoBehaviour
     protected GameObject player;
     public HealthBar healthBar;
     public SpawnEnemies spawner;
+    public GameObject coin;
 
     protected void setBasicConfigurations() {
       HitPoints = maxHealth;
@@ -36,6 +37,7 @@ public class BaseEnemy : MonoBehaviour
             //    spawner.Minotaur = GameObject.FindGameObjectWithTag("Minotaur");
             //}
             //spawner.enemyCount--;
+            Instantiate(coin, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

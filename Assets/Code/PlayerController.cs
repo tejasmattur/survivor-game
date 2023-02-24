@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public float cooldown = 1.0f;
     public float shotTime = 2.0f;
     private float nextFire = 0.0f;
+    public int coinCount = 0;
 
     // HUD
 		public HealthBar healthBar;
