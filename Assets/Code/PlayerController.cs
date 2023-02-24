@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
+using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     // Outlet
-		Rigidbody2D _rigidbody2D;
-		protected float HitPoints;
-		public float maxHealth = 10;
+	Rigidbody2D _rigidbody2D;
+	protected float HitPoints;
+	public float maxHealth = 10;
     public float speed;
     SpriteRenderer sprite;
     Animator animator;
-
+    public GameOver gameOver;
     // Weapons
     public GameObject spearPrefab;
 
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public float cooldown = 1.0f;
     public float shotTime = 2.0f;
     private float nextFire = 0.0f;
+    public int coinCount = 0;
 
     // HUD
 		public HealthBar healthBar;
@@ -34,8 +35,9 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-				HitPoints = maxHealth;
-	      healthBar.setHealth(HitPoints, maxHealth);
+		HitPoints = maxHealth;
+	    healthBar.setHealth(HitPoints, maxHealth);
+     
     }
 
     void FixedUpdate() {
@@ -123,8 +125,13 @@ public class PlayerController : MonoBehaviour
 	  void OnCollisionEnter2D(Collision2D other) {
         var enemy = other.collider.GetComponent<BaseEnemy>();
         if(enemy){
-					HitPoints -= enemy.collisonDamage;
-					healthBar.setHealth(HitPoints, maxHealth);
+			HitPoints -= enemy.collisonDamage;
+			healthBar.setHealth(HitPoints, maxHealth);
+			// Restart Level when player health is 0
+			if(HitPoints == 0){
+                gameOver.gameOver();
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+			}
         }
     }
 
