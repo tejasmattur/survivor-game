@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -507,7 +507,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      golem3_walking_2: 1980455622
+      golem3_walking_3: 2058433979
       golem3_walking_7: 829733189
       golem3_walking_8: -992839259
       golem3_walking_14: 801104507
@@ -523,8 +523,8 @@ TextureImporter:
       golem3_walking_17: -291771794
       golem3_walking_16: 835197980
       golem3_walking_11: 1788127975
-      golem3_walking_3: 2058433979
       golem3_walking_6: 64816313
+      golem3_walking_2: 1980455622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

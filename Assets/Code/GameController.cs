@@ -8,6 +8,7 @@ public class SpawnEnemies : MonoBehaviour {
 
     // Outlets
     public GameObject[] EnemyPrefabs;
+    public GameObject[] BossPrefabs;
 
     // Configurations
     public int MAX_ENEMIES = 10;
@@ -17,6 +18,7 @@ public class SpawnEnemies : MonoBehaviour {
     private int enemyCount;
     private GameObject[] enemies;
     Vector2 playerPos;
+    private bool boss_was_spawned = false;
 
     void Awake() {
         instance = this;
@@ -34,19 +36,14 @@ public class SpawnEnemies : MonoBehaviour {
         if (enemyCount < MAX_ENEMIES) {
             SpawnRandomEnemy();
         }
+
+        if (Time.time > 3f && boss_was_spawned != true) {
+            SpawnAnEnempy(BossPrefabs[0]);
+            boss_was_spawned = true;
+        }
     }
 
     void SpawnRandomEnemy() {
-        playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-        int player_x = (int) playerPos.x;
-        int player_y = (int) playerPos.y;
-        // spawn close enough, but not too close to player
-        Vector2 spawnPos;
-        do {
-          int xPos = Random.Range(player_x- 10, player_x+ 10);
-          int yPos = Random.Range(player_y- 10, player_y+ 10);
-          spawnPos = new Vector2(xPos, yPos);
-        } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
 
         // choose what enemy to spawn
         float probability = Random.Range(0,100);
@@ -57,7 +54,23 @@ public class SpawnEnemies : MonoBehaviour {
         else {
           enemy_to_spawn = EnemyPrefabs[1];
         }
-        Instantiate(enemy_to_spawn, spawnPos, Quaternion.identity);
+
+        SpawnAnEnempy(enemy_to_spawn);
+    }
+
+    void SpawnAnEnempy(GameObject enemy_to_spawn) {
+      playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+      int player_x = (int) playerPos.x;
+      int player_y = (int) playerPos.y;
+      // spawn close enough, but not too close to player
+      Vector2 spawnPos;
+      do {
+        int xPos = Random.Range(player_x- 10, player_x+ 10);
+        int yPos = Random.Range(player_y- 10, player_y+ 10);
+        spawnPos = new Vector2(xPos, yPos);
+      } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
+
+      Instantiate(enemy_to_spawn, spawnPos, Quaternion.identity);
     }
 
 }

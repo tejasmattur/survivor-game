@@ -801,7 +801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75501a0dc2817034bada6b895f37eb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 15
   speed: 30
   gameOver: {fileID: 1800614751}
   spearPrefab: {fileID: 2488543672055770359, guid: 1d506d7b97ae54f4daaaf0ba8144b215, type: 3}
@@ -1098,7 +1098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735828966}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.27, y: 0, z: -1}
+  m_LocalPosition: {x: -18.61, y: 6.85, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85574,6 +85574,8 @@ MonoBehaviour:
   EnemyPrefabs:
   - {fileID: 2166096577590632458, guid: c681dee0f6fdd144f96735c299199caf, type: 3}
   - {fileID: 4949751934177380531, guid: 9cdf513fc84ab6240aa018b1ba64716d, type: 3}
+  BossPrefabs:
+  - {fileID: 3898938028441121490, guid: 176dea1fdddc9984ca31ed8e7a9d2c18, type: 3}
   MAX_ENEMIES: 5
   min_spawn_distance: 2
 --- !u!4 &1168189479

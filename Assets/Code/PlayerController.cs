@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private float nextFire = 0.0f;
     public int coinCount = 0;
 	public TMP_Text coinText;
- 
+
 
     // HUD
 		public HealthBar healthBar;
@@ -120,17 +120,20 @@ public class PlayerController : MonoBehaviour
     	}
     }
 
+		public void takeDamage(float damage)
+    {
+        HitPoints -= damage;
+        healthBar.setHealth(HitPoints, maxHealth);
+        if(HitPoints <= 0){
+            gameOver.gameOver();
+        }
+    }
+
 		// collide with enemies
 	  void OnCollisionEnter2D(Collision2D other) {
         var enemy = other.collider.GetComponent<BaseEnemy>();
         if(enemy){
-			HitPoints -= enemy.collisonDamage;
-			healthBar.setHealth(HitPoints, maxHealth);
-			// Restart Level when player health is 0
-			if(HitPoints == 0){
-          gameOver.gameOver();
-          //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-			}
+						takeDamage(enemy.collisonDamage);
         }
     }
 
