@@ -26,10 +26,10 @@ public class PlayerController : MonoBehaviour
     private float nextFire = 0.0f;
     public int coinCount = 0;
 	public TMP_Text coinText;
+ 
 
     // HUD
 		public HealthBar healthBar;
-
 
 
     // Start is called before the first frame update

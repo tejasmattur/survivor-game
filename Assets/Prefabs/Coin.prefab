@@ -154,3 +154,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e78e5db976f1421da3bca567d6dc896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HUDController: {fileID: 3867708315221038583, guid: ad9da9e6d6fe6ff4ba11c4fa44f3e82a, type: 3}

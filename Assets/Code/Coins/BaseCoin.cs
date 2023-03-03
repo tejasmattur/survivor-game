@@ -9,6 +9,7 @@ public class BaseCoin : MonoBehaviour
 
     protected int coinValue = 1;
     protected float dropProbability = 1;
+    public int totalCoinCount = 0;
     //// Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,8 @@ public class BaseCoin : MonoBehaviour
             //CoinManager.instance.AddCoins(coinValue);
             //playerController.coinCount += coinValue;
             player.GetComponent<PlayerController>().coinCount += coinValue;
+            totalCoinCount = player.GetComponent<PlayerController>().coinCount;
+            Debug.Log("Total Coin: " + totalCoinCount);
             UpdateCoinText();
             Destroy(gameObject);
         }
@@ -36,6 +39,8 @@ public class BaseCoin : MonoBehaviour
     void UpdateCoinText()
     {
         player.GetComponent<PlayerController>().coinText.text = "Coins: " + player.GetComponent<PlayerController>().coinCount.ToString();
+       
     }
+
 
 }
