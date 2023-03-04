@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2291213034968792600
+--- !u!1 &4068782322735127342
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2291213034968792597}
-  - component: {fileID: 2291213034968792602}
-  - component: {fileID: 2291213034968792603}
-  - component: {fileID: -8608914438046806259}
-  - component: {fileID: 7544363174412682198}
-  m_Layer: 12
-  m_Name: Coin
+  - component: {fileID: 4068782322735127339}
+  - component: {fileID: 4068782322735127336}
+  - component: {fileID: 4068782322735127337}
+  - component: {fileID: 1110072699980745572}
+  - component: {fileID: -5344185478561429118}
+  m_Layer: 0
+  m_Name: Boomerang
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2291213034968792597
+--- !u!4 &4068782322735127339
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2291213034968792600}
+  m_GameObject: {fileID: 4068782322735127342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 3, y: 3, z: 0}
+  m_LocalPosition: {x: 1.4071904, y: 0.3845401, z: -0.9281423}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2291213034968792602
+--- !u!212 &4068782322735127336
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2291213034968792600}
+  m_GameObject: {fileID: 4068782322735127342}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,44 +76,24 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1615862237, guid: b0a3c49598e684e499150b1ab7359221, type: 3}
+  m_Sprite: {fileID: 2043078856, guid: 211bb32e5552a4a268d10cb9b9d31067, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.15, y: 0.16}
+  m_Size: {x: 1.125, y: 1.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2291213034968792603
-Animator:
-  serializedVersion: 5
+--- !u!60 &4068782322735127337
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2291213034968792600}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e6d35120cffa6413b92bfddbae1510ee, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
---- !u!70 &-8608914438046806259
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2291213034968792600}
+  m_GameObject: {fileID: 4068782322735127342}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -136,22 +116,79 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.15, y: 0.16}
-  m_Direction: 0
---- !u!114 &7544363174412682198
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.125, y: 1.125}
+    newSize: {x: 1.125, y: 1.125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.35569203, y: 0.54365444}
+      - {x: 0.18220413, y: 0.6038593}
+      - {x: -0.14490259, y: 0.5982684}
+      - {x: -0.13762295, y: 0.53768337}
+      - {x: -0.32896554, y: 0.5163442}
+      - {x: -0.47502416, y: 0.46168593}
+      - {x: -0.57726115, y: 0.3223813}
+      - {x: -0.56340265, y: 0.20546824}
+      - {x: -0.0052067637, y: 0.20829287}
+      - {x: 0.15981114, y: 0.10073492}
+      - {x: 0.26903093, y: -0.1434882}
+      - {x: 0.16158569, y: -0.2869975}
+      - {x: 0.19777942, y: -0.51299584}
+      - {x: 0.29746962, y: -0.5625}
+      - {x: 0.43252742, y: -0.44450757}
+      - {x: 0.519197, y: -0.30144054}
+      - {x: 0.582055, y: -0.1143322}
+      - {x: 0.5676544, y: 0.2176713}
+      - {x: 0.5003562, y: 0.3773311}
+      - {x: 0.43953514, y: 0.48338583}
+  m_UseDelaunayMesh: 0
+--- !u!50 &1110072699980745572
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4068782322735127342}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 5
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-5344185478561429118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2291213034968792600}
+  m_GameObject: {fileID: 4068782322735127342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e78e5db976f1421da3bca567d6dc896, type: 3}
+  m_Script: {fileID: 11500000, guid: 24ff0f21ba25d4a09a5c32eac7fe6080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalCoinCount: 0
+  weaponDamage: 2

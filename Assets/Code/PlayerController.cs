@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class PlayerController : MonoBehaviour
 {
+
+    private enum Weapon{
+        Spear = 0,
+        Shuriken = 1,
+        Kunai = 2
+    }
     // Outlet
 		Rigidbody2D _rigidbody2D;
 		protected float HitPoints;
@@ -16,7 +22,9 @@ public class PlayerController : MonoBehaviour
     public GameOver gameOver;
 
     // Weapons
+    public GameObject[] weaponPrefabs;
     public GameObject spearPrefab;
+    public GameObject shurikenPrefab;
 
     // Weapons Effect
     public int maxSpears = 3;
@@ -24,6 +32,13 @@ public class PlayerController : MonoBehaviour
     public float cooldown = 1.0f;
     public float shotTime = 2.0f;
     private float nextFire = 0.0f;
+
+    public int maxShuriken = 2;
+    public int shurikenLeft = 2;
+    public float shurikenCooldown = 10.0f;
+    public float shurikenShotTime = 10.0f;
+    private float shurikenNextFire = 0.0f;
+
     public int coinCount = 0;
 	public TMP_Text coinText;
 
@@ -91,10 +106,10 @@ public class PlayerController : MonoBehaviour
     		animator.SetBool("Attack", false);
     	}
 
-			// attack closest enemy first
-			Vector2 cur_pos = transform.position;
-			enemies = enemies.OrderBy((e) => (e.transform.position - transform.position).sqrMagnitude).ToArray();
-    	for (int i=0; i < enemies.Length; i++) {
+		// attack closest enemy first
+		Vector2 cur_pos = transform.position;
+		enemies = enemies.OrderBy((e) => (e.transform.position - transform.position).sqrMagnitude).ToArray();
+    	for (int i=0; i < enemies.Length - 1; i++) {
     		Vector2 e_pos = enemies[i].transform.position;
     		Vector2 enemy_dir = e_pos - cur_pos;
     		float fireAngle = getBetweenAngle(Vector2.right, enemy_dir);
@@ -103,7 +118,7 @@ public class PlayerController : MonoBehaviour
     		// Fire
     		if (Time.time > nextFire) {
 
-    			GameObject newSpear = Instantiate(spearPrefab);
+    			GameObject newSpear = Instantiate(weaponPrefabs[(int)Weapon.Spear]);
     			newSpear.transform.position = cur_pos + enemy_dir;
     			newSpear.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
     			spearsLeft -= 1;
@@ -117,10 +132,45 @@ public class PlayerController : MonoBehaviour
 	    		}
     		}
 
-    	}
+            // Fire shurikens
+            if (coinCount > 5)
+            { 
+                if (Time.time > shurikenNextFire)
+                {
+
+                    GameObject newShuriken = Instantiate(weaponPrefabs[(int)Weapon.Shuriken]);
+                    GameObject newShuriken2 = Instantiate(weaponPrefabs[(int)Weapon.Shuriken]);
+
+                    newShuriken.transform.position = cur_pos + enemy_dir;
+                    newShuriken.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
+
+                    Vector2 e2_pos = enemies[i + 1].transform.position;
+                    Vector2 enemy2_dir = e2_pos - cur_pos;
+                    float fireAngle2 = getBetweenAngle(Vector2.right, enemy_dir);
+                    enemy2_dir.Normalize();
+
+                    newShuriken2.transform.position = cur_pos + enemy2_dir;
+                    newShuriken2.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle2);
+
+                    shurikenLeft -= 2;
+
+                    if (shurikenLeft == 0)
+                    { // Cool down
+                        shurikenLeft = maxShuriken;
+                        shurikenNextFire = Time.time + shurikenCooldown;
+                    }
+                    else
+                    {
+                        shurikenNextFire = Time.time + shurikenShotTime / maxShuriken;
+                    }
+                }
+
+            }
+
+        }
     }
 
-		public void takeDamage(float damage)
+        public void takeDamage(float damage)
     {
         HitPoints -= damage;
         healthBar.setHealth(HitPoints, maxHealth);
