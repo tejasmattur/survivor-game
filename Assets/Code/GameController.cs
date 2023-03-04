@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class SpawnEnemies : MonoBehaviour {
 
@@ -20,12 +22,18 @@ public class SpawnEnemies : MonoBehaviour {
     Vector2 playerPos;
     private bool boss_was_spawned = false;
 
+    // Time
+
+    public TMP_Text timer;
+    private float startTime;
+
+
     void Awake() {
         instance = this;
     }
 
     void Start() {
-
+        startTime = Time.time;
     }
 
     void Update()
@@ -41,6 +49,11 @@ public class SpawnEnemies : MonoBehaviour {
             SpawnAnEnempy(BossPrefabs[0]);
             boss_was_spawned = true;
         }
+
+        float t = Time.time - startTime;
+        string minutes = ((int) t / 60).ToString();
+        string seconds = (t % 60).ToString("f2");
+        timer.text = minutes + ":" + seconds;
     }
 
     void SpawnRandomEnemy() {
