@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 373067739}
   - component: {fileID: 373067738}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TimerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -985,6 +985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 373067738}
+  startTime: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -85587,6 +85588,7 @@ MonoBehaviour:
   - {fileID: 3898938028441121490, guid: 176dea1fdddc9984ca31ed8e7a9d2c18, type: 3}
   MAX_ENEMIES: 5
   min_spawn_distance: 2
+  timer: {fileID: 373067738}
 --- !u!4 &1168189479
 Transform:
   m_ObjectHideFlags: 0
