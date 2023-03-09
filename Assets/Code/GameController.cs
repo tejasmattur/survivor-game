@@ -76,8 +76,8 @@ public class SpawnEnemies : MonoBehaviour {
         }
 
         // Spawn Boss 1
-        if (Time.time > 30f && boss_was_spawned != true) {
-            SpawnAnEnempy(BossPrefabs[0]);
+        if (Time.time > 3f && boss_was_spawned != true) {
+            SpawnAnEnemy2(BossPrefabs[0]);
             boss_was_spawned = true;
         }
 
@@ -93,10 +93,10 @@ public class SpawnEnemies : MonoBehaviour {
         // choose what enemy to spawn
         int enemyIndex = Random.Range(0, availEnemyPrefabs.Count);
         GameObject enemy_to_spawn = availEnemyPrefabs[enemyIndex];
-        SpawnAnEnempy(enemy_to_spawn);
+        SpawnAnEnemy2(enemy_to_spawn);
     }
 
-    void SpawnAnEnempy(GameObject enemy_to_spawn) {
+    void SpawnAnEnemy(GameObject enemy_to_spawn) {
       playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
       int player_x = (int) playerPos.x;
       int player_y = (int) playerPos.y;
@@ -109,6 +109,62 @@ public class SpawnEnemies : MonoBehaviour {
       } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
 
       Instantiate(enemy_to_spawn, spawnPos, Quaternion.identity);
+    }
+
+    void SpawnAnEnemy2(GameObject enemyToSpawn)
+    {    
+        int maxAttempts = 100;
+        int attempts = 0;
+        bool enemySpawned = false;
+
+        playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        int player_x = (int)playerPos.x;
+        int player_y = (int)playerPos.y;
+
+        while (!enemySpawned && attempts < maxAttempts)
+        {
+            Vector2 spawnPos;
+            do
+            {
+                int xPos = Random.Range(player_x - 15, player_x + 15);
+                int yPos = Random.Range(player_y - 15, player_y + 15);
+                spawnPos = new Vector2(xPos, yPos);
+            } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
+
+
+            CapsuleCollider2D enemyCollider = enemyToSpawn.GetComponent<CapsuleCollider2D>();
+            Vector2 enemyColliderSize = enemyCollider.size;
+
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(spawnPos, enemyColliderSize, 0);
+
+            if (colliders.Length == 0)
+            {
+                Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
+                enemySpawned = true;
+            }
+
+            else
+            {
+                bool hitBoundary = false;
+
+                foreach (Collider2D collider in colliders)
+                {
+                    if (collider.CompareTag("MapBoundary"))
+                    {
+                        hitBoundary = true;
+                        break;
+                    }
+                }
+
+                if (!hitBoundary)
+                {
+                    Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
+                    enemySpawned = true;
+                }
+            }
+            attempts++;
+        }
+
     }
 
 }
