@@ -814,9 +814,9 @@ MonoBehaviour:
   spearsLeft: 3
   cooldown: 2
   shotTime: 1
-  maxShuriken: 2
-  shurikenLeft: 2
-  shurikenCooldown: 1
+  maxShuriken: 6
+  shurikenLeft: 6
+  shurikenCooldown: 3
   shurikenShotTime: 2
   coinCount: 0
   coinText: {fileID: 1589171258}
@@ -984,8 +984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f83022e82c074321be2811ea9f61b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 373067738}
-  startTime: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -85584,6 +85582,8 @@ MonoBehaviour:
   EnemyPrefabs:
   - {fileID: 2166096577590632458, guid: c681dee0f6fdd144f96735c299199caf, type: 3}
   - {fileID: 4949751934177380531, guid: 9cdf513fc84ab6240aa018b1ba64716d, type: 3}
+  - {fileID: 1401808135587123036, guid: c010545e7e7b0e04ab69d0a3d46ea0f5, type: 3}
+  - {fileID: 2473311090980181674, guid: cb65d6accb222f44dad1d40edbd11ad9, type: 3}
   BossPrefabs:
   - {fileID: 3898938028441121490, guid: 176dea1fdddc9984ca31ed8e7a9d2c18, type: 3}
   MAX_ENEMIES: 5

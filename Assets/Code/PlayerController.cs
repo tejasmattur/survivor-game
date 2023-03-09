@@ -33,10 +33,10 @@ public class PlayerController : MonoBehaviour
     public float shotTime = 2.0f;
     private float nextFire = 0.0f;
 
-    public int maxShuriken = 2;
-    public int shurikenLeft = 2;
-    public float shurikenCooldown = 10.0f;
-    public float shurikenShotTime = 10.0f;
+    public int maxShuriken = 5;
+    public int shurikenLeft = 5;
+    public float shurikenCooldown = 5.0f;
+    public float shurikenShotTime = 2.0f;
     private float shurikenNextFire = 0.0f;
 
     public int coinCount = 0;
@@ -97,6 +97,9 @@ public class PlayerController : MonoBehaviour
 
     	// Check for enemies
     	GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+      if (enemies.Length == 0) {
+        enemies = GameObject.FindGameObjectsWithTag("Boss"); // only boss is around
+      }
 
 			// update attack animation
     	if (!animator.GetBool("Attack") && animator.GetFloat("Speed") < 0.1 && enemies.Length != 0) {
@@ -109,7 +112,7 @@ public class PlayerController : MonoBehaviour
 		// attack closest enemy first
 		Vector2 cur_pos = transform.position;
 		enemies = enemies.OrderBy((e) => (e.transform.position - transform.position).sqrMagnitude).ToArray();
-    	for (int i=0; i < enemies.Length - 1; i++) {
+    	for (int i=0; i < enemies.Length; i++) {
     		Vector2 e_pos = enemies[i].transform.position;
     		Vector2 enemy_dir = e_pos - cur_pos;
     		float fireAngle = getBetweenAngle(Vector2.right, enemy_dir);
@@ -131,43 +134,41 @@ public class PlayerController : MonoBehaviour
 	    			nextFire = Time.time + shotTime/maxSpears;
 	    		}
     		}
+      }
 
-            // Fire shurikens
-            if (coinCount > 5)
-            { 
-                if (Time.time > shurikenNextFire)
-                {
+        // Fire shurikens
+        if (coinCount > 5)
+        {
+            if (Time.time > shurikenNextFire)
+            {
 
-                    GameObject newShuriken = Instantiate(weaponPrefabs[(int)Weapon.Shuriken]);
-                    GameObject newShuriken2 = Instantiate(weaponPrefabs[(int)Weapon.Shuriken]);
+              int xPos = Random.Range(-10, 10);
+              int yPos = Random.Range(-10, 10);
+              Vector2 randPos = new Vector2(xPos, yPos);
 
-                    newShuriken.transform.position = cur_pos + enemy_dir;
-                    newShuriken.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
+              GameObject newShuriken = Instantiate(weaponPrefabs[(int)Weapon.Shuriken]);
 
-                    Vector2 e2_pos = enemies[i + 1].transform.position;
-                    Vector2 enemy2_dir = e2_pos - cur_pos;
-                    float fireAngle2 = getBetweenAngle(Vector2.right, enemy_dir);
-                    enemy2_dir.Normalize();
+              Vector2 shuriken_dir = randPos - cur_pos;
+              float fireAngle = getBetweenAngle(Vector2.right, shuriken_dir);
+              shuriken_dir.Normalize();
 
-                    newShuriken2.transform.position = cur_pos + enemy2_dir;
-                    newShuriken2.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle2);
+              newShuriken.transform.position = cur_pos + shuriken_dir;
+              newShuriken.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
 
-                    shurikenLeft -= 2;
+              shurikenLeft -= 1;
 
-                    if (shurikenLeft == 0)
-                    { // Cool down
-                        shurikenLeft = maxShuriken;
-                        shurikenNextFire = Time.time + shurikenCooldown;
-                    }
-                    else
-                    {
-                        shurikenNextFire = Time.time + shurikenShotTime / maxShuriken;
-                    }
-                }
-
+              if (shurikenLeft == 0)
+              { // Cool down
+                  shurikenLeft = maxShuriken;
+                  shurikenNextFire = Time.time + shurikenCooldown;
+              }
+              else
+              {
+                  shurikenNextFire = Time.time + shurikenShotTime / maxShuriken;
+              }
             }
 
-        }
+          }
     }
 
         public void takeDamage(float damage)

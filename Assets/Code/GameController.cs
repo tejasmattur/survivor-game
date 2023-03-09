@@ -14,13 +14,19 @@ public class SpawnEnemies : MonoBehaviour {
 
     // Configurations
     public int MAX_ENEMIES = 10;
-    public int min_spawn_distance = 2;
+    public int min_spawn_distance = 3;
 
     // State Tracking
     private int enemyCount;
+    private int bossCount;
     private GameObject[] enemies;
+    private GameObject[] bosses;
     Vector2 playerPos;
     private bool boss_was_spawned = false;
+    private bool boss_is_alive = false;
+    private int cur_stage = 1;
+    private int new_enemy_stage = 3;
+    private List<GameObject> availEnemyPrefabs = new List<GameObject>();
 
     // Time
 
@@ -34,22 +40,48 @@ public class SpawnEnemies : MonoBehaviour {
 
     void Start() {
         startTime = Time.time;
+        availEnemyPrefabs.Add(EnemyPrefabs[0]);
+        availEnemyPrefabs.Add(EnemyPrefabs[1]);
     }
 
     void Update()
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        bosses = GameObject.FindGameObjectsWithTag("Boss");
         enemyCount = enemies.Length;
+        bossCount = bosses.Length;
+        boss_is_alive = bossCount != 0;
 
-        if (enemyCount < MAX_ENEMIES) {
+        // keep track of stage
+        if (Time.time > cur_stage*30f) {
+          cur_stage += 1;
+          MAX_ENEMIES = (int) ((float) MAX_ENEMIES * 1.25f);
+          // new enemy type
+          if (availEnemyPrefabs.Count < EnemyPrefabs.Length && cur_stage == new_enemy_stage) {
+            availEnemyPrefabs.Add(EnemyPrefabs[availEnemyPrefabs.Count]);
+            new_enemy_stage += 2;
+          }
+        }
+
+        // reset for boss
+        if (enemyCount != 0 &&boss_is_alive) {
+          for (int i=0; i<enemyCount; i++) {
+            Destroy(enemies[i]);
+          }
+        }
+
+        // spawn random enemies
+        if (enemyCount < MAX_ENEMIES && !boss_is_alive) {
             SpawnRandomEnemy();
         }
 
-        if (Time.time > 3f && boss_was_spawned != true) {
+        // Spawn Boss 1
+        if (Time.time > 30f && boss_was_spawned != true) {
             SpawnAnEnempy(BossPrefabs[0]);
             boss_was_spawned = true;
         }
 
+        // Timer display
         float t = Time.time - startTime;
         string minutes = ((int) t / 60).ToString();
         string seconds = (t % 60).ToString("f2");
@@ -59,15 +91,8 @@ public class SpawnEnemies : MonoBehaviour {
     void SpawnRandomEnemy() {
 
         // choose what enemy to spawn
-        float probability = Random.Range(0,100);
-        GameObject enemy_to_spawn;
-        if (probability < 70) { // golems get spawned more often
-          enemy_to_spawn = EnemyPrefabs[0];
-        }
-        else {
-          enemy_to_spawn = EnemyPrefabs[1];
-        }
-
+        int enemyIndex = Random.Range(0, availEnemyPrefabs.Count);
+        GameObject enemy_to_spawn = availEnemyPrefabs[enemyIndex];
         SpawnAnEnempy(enemy_to_spawn);
     }
 
@@ -78,8 +103,8 @@ public class SpawnEnemies : MonoBehaviour {
       // spawn close enough, but not too close to player
       Vector2 spawnPos;
       do {
-        int xPos = Random.Range(player_x- 10, player_x+ 10);
-        int yPos = Random.Range(player_y- 10, player_y+ 10);
+        int xPos = Random.Range(player_x- 15, player_x+ 15);
+        int yPos = Random.Range(player_y- 15, player_y+ 15);
         spawnPos = new Vector2(xPos, yPos);
       } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
 
