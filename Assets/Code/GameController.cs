@@ -28,6 +28,12 @@ public class SpawnEnemies : MonoBehaviour {
     private int new_enemy_stage = 3;
     private List<GameObject> availEnemyPrefabs = new List<GameObject>();
 
+    // constants
+    private int MAX_X = 15;
+    private int MIN_X = -110;
+    private int MAX_Y = 17;
+    private int MIN_Y = -45;
+
     // Time
 
     public TMP_Text timer;
@@ -60,6 +66,7 @@ public class SpawnEnemies : MonoBehaviour {
           if (availEnemyPrefabs.Count < EnemyPrefabs.Length && cur_stage == new_enemy_stage) {
             availEnemyPrefabs.Add(EnemyPrefabs[availEnemyPrefabs.Count]);
             new_enemy_stage += 2;
+            Debug.Log("new enemy added");
           }
         }
 
@@ -76,8 +83,8 @@ public class SpawnEnemies : MonoBehaviour {
         }
 
         // Spawn Boss 1
-        if (Time.time > 3f && boss_was_spawned != true) {
-            SpawnAnEnemy2(BossPrefabs[0]);
+        if (Time.time > 30f && boss_was_spawned != true) {
+            SpawnAnEnemy(BossPrefabs[0]);
             boss_was_spawned = true;
         }
 
@@ -93,7 +100,7 @@ public class SpawnEnemies : MonoBehaviour {
         // choose what enemy to spawn
         int enemyIndex = Random.Range(0, availEnemyPrefabs.Count);
         GameObject enemy_to_spawn = availEnemyPrefabs[enemyIndex];
-        SpawnAnEnemy2(enemy_to_spawn);
+        SpawnAnEnemy(enemy_to_spawn);
     }
 
     void SpawnAnEnemy(GameObject enemy_to_spawn) {
@@ -102,69 +109,73 @@ public class SpawnEnemies : MonoBehaviour {
       int player_y = (int) playerPos.y;
       // spawn close enough, but not too close to player
       Vector2 spawnPos;
+      int xPos;
+      int yPos;
       do {
-        int xPos = Random.Range(player_x- 15, player_x+ 15);
-        int yPos = Random.Range(player_y- 15, player_y+ 15);
+        xPos = Random.Range(player_x- 15, player_x+ 15);
+        yPos = Random.Range(player_y- 15, player_y+ 15);
         spawnPos = new Vector2(xPos, yPos);
-      } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
+      } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance
+                || xPos < MIN_X || xPos > MAX_X || yPos < MIN_Y || yPos > MAX_Y
+              );
 
       Instantiate(enemy_to_spawn, spawnPos, Quaternion.identity);
     }
 
-    void SpawnAnEnemy2(GameObject enemyToSpawn)
-    {    
-        int maxAttempts = 100;
-        int attempts = 0;
-        bool enemySpawned = false;
-
-        playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-        int player_x = (int)playerPos.x;
-        int player_y = (int)playerPos.y;
-
-        while (!enemySpawned && attempts < maxAttempts)
-        {
-            Vector2 spawnPos;
-            do
-            {
-                int xPos = Random.Range(player_x - 15, player_x + 15);
-                int yPos = Random.Range(player_y - 15, player_y + 15);
-                spawnPos = new Vector2(xPos, yPos);
-            } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
-
-
-            CapsuleCollider2D enemyCollider = enemyToSpawn.GetComponent<CapsuleCollider2D>();
-            Vector2 enemyColliderSize = enemyCollider.size;
-
-            Collider2D[] colliders = Physics2D.OverlapBoxAll(spawnPos, enemyColliderSize, 0);
-
-            if (colliders.Length == 0)
-            {
-                Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
-                enemySpawned = true;
-            }
-
-            else
-            {
-                bool hitBoundary = false;
-
-                foreach (Collider2D collider in colliders)
-                {
-                    if (collider.CompareTag("MapBoundary"))
-                    {
-                        hitBoundary = true;
-                        break;
-                    }
-                }
-
-                if (!hitBoundary)
-                {
-                    Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
-                    enemySpawned = true;
-                }
-            }
-            attempts++;
-        }
-
-    }
+    // void SpawnAnEnemy2(GameObject enemyToSpawn)
+    // {
+    //     int maxAttempts = 100;
+    //     int attempts = 0;
+    //     bool enemySpawned = false;
+    //
+    //     playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+    //     int player_x = (int)playerPos.x;
+    //     int player_y = (int)playerPos.y;
+    //
+    //     while (!enemySpawned && attempts < maxAttempts)
+    //     {
+    //         Vector2 spawnPos;
+    //         do
+    //         {
+    //             int xPos = Random.Range(player_x - 15, player_x + 15);
+    //             int yPos = Random.Range(player_y - 15, player_y + 15);
+    //             spawnPos = new Vector2(xPos, yPos);
+    //         } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
+    //
+    //
+    //         Collider2D enemyCollider = enemyToSpawn.GetComponent<Collider2D>();
+    //         Vector2 enemyColliderSize = enemyCollider.size;
+    //
+    //         Collider2D[] colliders = Physics2D.OverlapBoxAll(spawnPos, enemyColliderSize, 0);
+    //
+    //         if (colliders.Length == 0)
+    //         {
+    //             Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
+    //             enemySpawned = true;
+    //         }
+    //
+    //         else
+    //         {
+    //             bool hitBoundary = false;
+    //
+    //             foreach (Collider2D collider in colliders)
+    //             {
+    //                 if (collider.CompareTag("MapBoundary"))
+    //                 {
+    //                     hitBoundary = true;
+    //                     break;
+    //                 }
+    //             }
+    //
+    //             if (!hitBoundary)
+    //             {
+    //                 Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
+    //                 enemySpawned = true;
+    //             }
+    //         }
+    //         attempts++;
+    //     }
+    //
+    // }
 
 }
