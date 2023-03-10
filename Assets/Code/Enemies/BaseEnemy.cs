@@ -43,4 +43,10 @@ public class BaseEnemy : MonoBehaviour
       _rigidbody2D.AddForce(dir_to_player * speed * Time.deltaTime, ForceMode2D.Impulse);
     }
 
+    protected float getBetweenAngle(Vector2 v1, Vector2 v2) {
+  	 	 Vector2 v1_r90 = new Vector2(-v1.y, v1.x);
+ 	     float sign = (Vector2.Dot(v1_r90, v2) < 0) ? -1.0f : 1.0f;
+ 	     return Vector2.Angle(v1, v2) * sign;
+ 	 }
+
 }

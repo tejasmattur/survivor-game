@@ -27,7 +27,7 @@ public class BossGolem : BaseEnemy
         dir_to_player.Normalize();
 
     		float fireAngle = getBetweenAngle(Vector2.right, dir_to_player);
-        float[] fireAngles = new float[] {fireAngle-20, fireAngle, fireAngle+20};
+        float[] fireAngles = new float[] {fireAngle-25, fireAngle, fireAngle+25};
 
         for (int i=0; i< fireAngles.Length; i++) {
           GameObject newClub = Instantiate(clubPrefab);
@@ -49,10 +49,5 @@ public class BossGolem : BaseEnemy
       }
     }
 
-    private float getBetweenAngle(Vector2 v1, Vector2 v2) {
-  	 	 Vector2 v1_r90 = new Vector2(-v1.y, v1.x);
- 	     float sign = (Vector2.Dot(v1_r90, v2) < 0) ? -1.0f : 1.0f;
- 	     return Vector2.Angle(v1, v2) * sign;
- 	 }
 
 }

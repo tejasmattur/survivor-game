@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Minotaur
   - Golem
+  - Boss
+  - Projectile
+  - MapBoundary
   layers:
   - Default
   - TransparentFX
