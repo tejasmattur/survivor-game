@@ -30,7 +30,7 @@ public class BaseCoin : MonoBehaviour
             //playerController.coinCount += coinValue;
             player.GetComponent<PlayerController>().coinCount += coinValue;
             totalCoinCount = player.GetComponent<PlayerController>().coinCount;
-            Debug.Log("Total Coin: " + totalCoinCount);
+            HUDController.instance.curExp += 1;
             UpdateCoinText();
             Destroy(gameObject);
         }
@@ -38,7 +38,7 @@ public class BaseCoin : MonoBehaviour
 
     void UpdateCoinText()
     {
-        player.GetComponent<PlayerController>().coinText.text = "Coins: " + player.GetComponent<PlayerController>().coinCount.ToString();
+        player.GetComponent<PlayerController>().coinText.text = player.GetComponent<PlayerController>().coinCount.ToString();
        
     }
 

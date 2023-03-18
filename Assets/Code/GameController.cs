@@ -11,6 +11,8 @@ public class SpawnEnemies : MonoBehaviour {
     // Outlets
     public GameObject[] EnemyPrefabs;
     public GameObject[] BossPrefabs;
+    public Image bossHealthImage;
+    public int level;
 
     // Configurations
     public int MAX_ENEMIES = 10;
@@ -48,6 +50,8 @@ public class SpawnEnemies : MonoBehaviour {
         startTime = Time.time;
         availEnemyPrefabs.Add(EnemyPrefabs[0]);
         availEnemyPrefabs.Add(EnemyPrefabs[1]);
+        bossHealthImage.enabled = false;
+        level = 1;
     }
 
     void Update()
@@ -86,15 +90,41 @@ public class SpawnEnemies : MonoBehaviour {
         if (Time.time > 30f && boss_was_spawned != true) {
             SpawnAnEnemy(BossPrefabs[0]);
             boss_was_spawned = true;
+            bossHealthImage.enabled = true;
         }
 
-        // Timer display
-        float t = Time.time - startTime;
-        string minutes = ((int) t / 60).ToString();
-        string seconds = (t % 60).ToString("f2");
-        timer.text = minutes + ":" + seconds;
+        DisplayTimer();
     }
 
+    private void DisplayTimer()
+    {
+
+        float t = Time.time - startTime;
+        float min = Mathf.Floor(t / 60);
+        float sec = Mathf.Round(t % 60);
+        string minutes;
+        string seconds;
+
+        if(min < 10)
+        {
+            minutes = "0" + min.ToString();
+        }
+        else
+        {
+            minutes = min.ToString();
+        }
+
+        if(sec < 10)
+        {
+            seconds = "0" + Mathf.RoundToInt(sec).ToString();
+        }
+        else
+        {
+            seconds = sec.ToString();
+        }
+
+        timer.text = minutes.ToString() + ":" + seconds;
+    }
     void SpawnRandomEnemy() {
 
         // choose what enemy to spawn
