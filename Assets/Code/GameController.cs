@@ -41,6 +41,7 @@ public class SpawnEnemies : MonoBehaviour {
     public TMP_Text timer;
     private float startTime;
 
+    public string timerText;
 
     void Awake() {
         instance = this;
@@ -124,6 +125,7 @@ public class SpawnEnemies : MonoBehaviour {
         }
 
         timer.text = minutes.ToString() + ":" + seconds;
+        timerText = timer.text;
     }
     void SpawnRandomEnemy() {
 
