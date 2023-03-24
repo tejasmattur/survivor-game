@@ -8,6 +8,13 @@ public class BaseWeapon : MonoBehaviour
   	// Outlets
   	protected Rigidbody2D _ridgidbody2D;
     public float weaponDamage;
+    public int weaponLevel;
+
+    public BaseWeapon(float damage, int level)
+    {
+        weaponDamage = damage;
+        weaponLevel = level;
+    }
 
     protected void setBasicConfigurations() {
       _ridgidbody2D = GetComponent<Rigidbody2D>();
@@ -20,4 +27,15 @@ public class BaseWeapon : MonoBehaviour
         }
     	Destroy(gameObject);
     }
+
+    public void IncreaseDamage(float amount)
+    {
+        weaponDamage += amount;
+    }
+
+    public void IncreaseLevel(int amount)
+    {
+        weaponLevel += amount;
+    }
+
 }

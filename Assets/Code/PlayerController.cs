@@ -42,6 +42,12 @@ public class PlayerController : MonoBehaviour
     public int coinCount = 0;
 	public TMP_Text coinText;
 
+    public float spearDamage = 1f;
+    public int spearLevel = 1;
+
+    public float shurikenDamage = 1.5f;
+    public int shurikenLevel = 1;
+
 
     // HUD
 		public HealthBar healthBar;
@@ -124,10 +130,19 @@ public class PlayerController : MonoBehaviour
     		// Fire
     		if (Time.time > nextFire) {
 
-    			GameObject newSpear = Instantiate(weaponPrefabs[(int)Weapon.Spear]);
-    			newSpear.transform.position = cur_pos + enemy_dir;
-    			newSpear.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
-    			spearsLeft -= 1;
+                //GameObject newSpear = Instantiate(weaponPrefabs[(int)Weapon.Spear]);
+                //         // Get a reference to the Spear component attached to the new instance
+                //         Spear spearComponent = newSpear.GetComponent<Spear>();
+
+                //         // Set the damage and level values of the Spear component
+                //         spearComponent.weaponDamage = spearDamage;
+                //         spearComponent.weaponLevel = spearLevel;
+
+                //         newSpear.transform.position = cur_pos + enemy_dir;
+                //newSpear.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
+                SpawnSpear(spearDamage, spearLevel, cur_pos + enemy_dir, Quaternion.Euler(0.0f, 0.0f, fireAngle));
+
+                spearsLeft -= 1;
 
     			if (spearsLeft == 0) { // Cool down
 	    			spearsLeft = maxSpears;
@@ -148,15 +163,13 @@ public class PlayerController : MonoBehaviour
               int xPos = Random.Range(-10, 10);
               int yPos = Random.Range(-10, 10);
               Vector2 randPos = new Vector2(xPos, yPos);
-
-              GameObject newShuriken = Instantiate(weaponPrefabs[(int)Weapon.Shuriken]);
-
               Vector2 shuriken_dir = randPos - cur_pos;
               float fireAngle = getBetweenAngle(Vector2.right, shuriken_dir);
               shuriken_dir.Normalize();
+              Vector2 position = cur_pos + shuriken_dir;
+              Quaternion rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
 
-              newShuriken.transform.position = cur_pos + shuriken_dir;
-              newShuriken.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
+              SpawnShuriken(shurikenDamage, shurikenLevel, position, rotation);
 
               shurikenLeft -= 1;
 
@@ -198,5 +211,31 @@ public class PlayerController : MonoBehaviour
 	     float sign = (Vector2.Dot(v1_r90, v2) < 0) ? -1.0f : 1.0f;
 	     return Vector2.Angle(v1, v2) * sign;
 	 }
+
+    void SpawnSpear(float damage, int level, Vector2 pos, Quaternion rotation)
+    {
+        GameObject newSpear = Instantiate(weaponPrefabs[(int)Weapon.Spear]);
+        // Get a reference to the Spear component attached to the new instance
+        Spear spearComponent = newSpear.GetComponent<Spear>();
+
+        // Set the damage and level values of the Spear component
+        spearComponent.weaponDamage = damage;
+        spearComponent.weaponLevel = level;
+
+        newSpear.transform.position = pos;
+        newSpear.transform.rotation = rotation;
+    }
+
+    void SpawnShuriken(float damage, int level, Vector2 pos, Quaternion rotation)
+    {
+        GameObject newShuriken = Instantiate(weaponPrefabs[(int)Weapon.Shuriken]);
+        Shuriken shurikenComponent = newShuriken.GetComponent<Shuriken>();
+
+        shurikenComponent.weaponDamage = damage;
+        shurikenComponent.weaponLevel = level;
+
+        newShuriken.transform.position = pos;
+        newShuriken.transform.rotation = rotation;
+    }
 
 }
