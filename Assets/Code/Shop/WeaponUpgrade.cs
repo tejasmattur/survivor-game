@@ -6,8 +6,8 @@ public class WeaponUpgrade : UpgradeBase
 {
     protected override void ApplyUpgrade()
     {
-        // Add the health upgrade effect.
-        // ...
+        Spear spear = FindObjectOfType<Spear>();
+        spear.weaponDamage += 5;
     }
 }
 

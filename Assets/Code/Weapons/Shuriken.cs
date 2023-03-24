@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Shuriken : BaseWeapon
 {
+    public Shuriken(float damage, int level) : base(damage, level)
+    {
+    }
     // Start is called before the first frame update
     void Start()
     {
-        weaponDamage = 1.5f;
         setBasicConfigurations();
         _ridgidbody2D.velocity = transform.right * 11;
     }

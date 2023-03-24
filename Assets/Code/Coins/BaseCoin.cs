@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class BaseCoin : MonoBehaviour
 {
-
+    public static BaseCoin instance;
     protected GameObject player;
     SpriteRenderer sprite;
 
     public int coinValue = 1;
     //public float dropProbability = 1f;
     public int totalCoinCount = 0;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     //// Start is called before the first frame update
     protected void Start()
@@ -30,7 +35,7 @@ public class BaseCoin : MonoBehaviour
         }
     }
 
-    void UpdateCoinText()
+    public void UpdateCoinText()
     {
         player.GetComponent<PlayerController>().coinText.text = player.GetComponent<PlayerController>().coinCount.ToString();
        

@@ -123,7 +123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: e802ef426ba07480bb684e5f053c06cb, type: 3}
+      - m_Target: {fileID: 11500000, guid: bd57dea783b9c4e8ca0d74607113a804, type: 3}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1

@@ -50,6 +50,49 @@ public class ShopController : MonoBehaviour
     {
         upgrade.price = thisPrice;
         upgrade.PurchaseUpgrade();
+        closeShop();
+    }
+
+    public void upgradeSpear(int price)
+    {
+        //add blocker if coinCount < price
+        int coinCount = PlayerController.instance.coinCount;
+        if (coinCount >= price)
+        {
+            PlayerController.instance.coinCount -= price;
+            updateCoinCount();
+            PlayerController.instance.spearDamage += 0.25f;
+            closeShop();
+        }
+    }
+
+    public void upgradeShuriken(int price)
+    {
+        int coinCount = PlayerController.instance.coinCount;
+        if (coinCount >= price)
+        {
+            PlayerController.instance.coinCount -= price;
+            updateCoinCount();
+            PlayerController.instance.shurikenDamage += 0.25f;
+            closeShop();
+        }
+    }
+
+    public void upgradeMaxHealth(int price)
+    {
+        int coinCount = PlayerController.instance.coinCount;
+        if (coinCount >= price)
+        {
+            PlayerController.instance.coinCount -= price;
+            updateCoinCount();
+            PlayerController.instance.maxHealth += 1;
+            closeShop();
+        }
+    }
+
+    public void updateCoinCount()
+    {
+        BaseCoin.instance.UpdateCoinText();
     }
 
 }
