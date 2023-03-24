@@ -40,8 +40,8 @@ public class HUDController : MonoBehaviour
             maxExp += Mathf.RoundToInt(maxExp * .65f);
 
             // Increase level when exp is full
-            SpawnEnemies.instance.level += 1;
-            levelText.text = SpawnEnemies.instance.level.ToString();
+            GameController.instance.level += 1;
+            levelText.text = GameController.instance.level.ToString();
         }
 
         expImage.fillAmount = curExp / maxExp;
