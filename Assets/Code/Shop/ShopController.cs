@@ -14,6 +14,7 @@ public class ShopController : MonoBehaviour
     {
         instance = this;
     }
+
     void Start()
     {
         shopUI.enabled = false;
@@ -23,7 +24,7 @@ public class ShopController : MonoBehaviour
     {
         if (HUDController.curExp >= HUDController.maxExp)
         {
-            openShop();
+           openShop();
         }
     }
 
@@ -39,6 +40,16 @@ public class ShopController : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    public void markPurchaseType() 
+    {
+        HealthUpgrade healthUpgrade = new HealthUpgrade();
+        buyUpgrade(10, healthUpgrade);
+    }
 
+    public void buyUpgrade(int thisPrice, UpgradeBase upgrade)
+    {
+        upgrade.price = thisPrice;
+        upgrade.PurchaseUpgrade();
+    }
 
 }

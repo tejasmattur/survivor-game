@@ -6,31 +6,25 @@ public class BaseCoin : MonoBehaviour
 {
 
     protected GameObject player;
+    SpriteRenderer sprite;
 
-    protected int coinValue = 1;
-    protected float dropProbability = 1;
+    public int coinValue = 1;
+    //public float dropProbability = 1f;
     public int totalCoinCount = 0;
+
     //// Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         player = GameObject.FindWithTag("Player");
     }
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //}
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            // Increment total value and destroy the coin
-            //CoinManager.instance.AddCoins(coinValue);
-            //playerController.coinCount += coinValue;
             player.GetComponent<PlayerController>().coinCount += coinValue;
             totalCoinCount = player.GetComponent<PlayerController>().coinCount;
-            HUDController.instance.curExp += 1;
+            HUDController.instance.curExp += coinValue;
             UpdateCoinText();
             Destroy(gameObject);
         }
@@ -42,5 +36,10 @@ public class BaseCoin : MonoBehaviour
        
     }
 
+    //protected void setBasicConfigurations()
+    //{
+    //    sprite = GetComponent<SpriteRenderer>();
+    //    player = GameObject.FindGameObjectWithTag("Player");
+    //}
 
 }
