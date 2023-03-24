@@ -17,13 +17,15 @@ public class GameOver : MonoBehaviour
     public void gameOver()
     {
         coinText.text = "Coins Collected :" + PlayerController.instance.coinCount;
-        timeText.text = "Time Survived: " + SpawnEnemies.instance.timerText;
+        timeText.text = "Time Survived: " + GameController.instance.timerText;
         gameObject.SetActive(true);
     }
 
     public void RestartButton()
     {
+        GameController.instance.Reset();
         SceneManager.LoadScene("BasicMap");
+        Debug.Log("Game Restarted");
     }
 
     public void StartMenu()

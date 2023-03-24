@@ -14,7 +14,6 @@ public class BaseEnemy : MonoBehaviour
     SpriteRenderer sprite;
     protected GameObject player;
     public HealthBar healthBar;
-    public SpawnEnemies spawner;
     public GameObject coin;
 
     protected void setBasicConfigurations() {
