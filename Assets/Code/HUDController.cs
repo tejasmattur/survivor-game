@@ -1,36 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HUDController : MonoBehaviour
 {
+    public static HUDController instance;
     // Start is called before the first frame update
-    public Slider Slider;
-    public Color Low;
-    public Color High;
-    float MAX = 10;
-    protected GameObject player;
-    void Start()
+    public Image expImage;
+    public TMP_Text levelText;
+
+    public float maxExp;
+    public float curExp;
+    void Awake()
     {
-        Slider.maxValue = MAX;
-        Slider.value = 0;
-        player = GameObject.FindWithTag("Player");
+        instance = this;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         showExp();
     }
+    void Start()
+    {
+        curExp = 0;
+        maxExp = 1f;
+        levelText.text = "1";
+    }
+
 
     public void showExp()
     {
-        Slider.maxValue = MAX;
-        Slider.value = player.GetComponent<PlayerController>().coinCount;
 
-        Debug.Log("Slider Value" + Slider.value);
+        if (curExp >= maxExp)
+        {
+            curExp = 0;
+            maxExp += Mathf.RoundToInt(maxExp * .65f);
 
-        Slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(Low, High, Slider.normalizedValue);
+            // Increase level when exp is full
+            GameController.instance.level += 1;
+            levelText.text = GameController.instance.level.ToString();
+        }
+
+        expImage.fillAmount = curExp / maxExp;
     }
 }

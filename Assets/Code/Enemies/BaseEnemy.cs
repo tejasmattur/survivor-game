@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CoinType {
+    def,
+    red
+}
+
 public class BaseEnemy : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -14,8 +19,27 @@ public class BaseEnemy : MonoBehaviour
     SpriteRenderer sprite;
     protected GameObject player;
     public HealthBar healthBar;
-    public SpawnEnemies spawner;
     public GameObject coin;
+    public GameObject[] coinObjects;
+    public float[] coinDropProbabilities;
+
+    void onDeath()
+    {
+        GameObject coinToDrop;
+        float randomValue = Random.value;
+
+        if (randomValue <= coinDropProbabilities[(int)CoinType.def])
+        {
+            coinToDrop = coinObjects[(int)CoinType.def];
+        }
+        else
+        {
+            coinToDrop = coinObjects[(int)CoinType.red];
+        }
+
+        Instantiate(coinToDrop, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
 
     protected void setBasicConfigurations() {
       HitPoints = maxHealth;
@@ -30,8 +54,9 @@ public class BaseEnemy : MonoBehaviour
         HitPoints -= damage;
         healthBar.setHealth(HitPoints, maxHealth);
         if(HitPoints <= 0){
-            Instantiate(coin, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            //Instantiate(coin, transform.position, Quaternion.identity);
+            //Destroy(gameObject);
+            onDeath();
         }
     }
 

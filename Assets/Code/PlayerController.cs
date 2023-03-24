@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class PlayerController : MonoBehaviour
 {
-
+    public static PlayerController instance;
     private enum Weapon{
         Spear = 0,
         Shuriken = 1,
@@ -46,7 +46,10 @@ public class PlayerController : MonoBehaviour
     // HUD
 		public HealthBar healthBar;
 
-
+    private void Awake()
+    {
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -137,7 +140,7 @@ public class PlayerController : MonoBehaviour
       }
 
         // Fire shurikens
-        if (coinCount > 5)
+        if (coinCount > 10)
         {
             if (Time.time > shurikenNextFire)
             {
@@ -168,7 +171,7 @@ public class PlayerController : MonoBehaviour
               }
             }
 
-          }
+        }
     }
 
         public void takeDamage(float damage)
@@ -176,9 +179,11 @@ public class PlayerController : MonoBehaviour
         HitPoints -= damage;
         healthBar.setHealth(HitPoints, maxHealth);
         if(HitPoints <= 0){
+            Time.timeScale = 0f;
             gameOver.gameOver();
         }
     }
+
 
 		// collide with enemies
 	  void OnCollisionEnter2D(Collision2D other) {

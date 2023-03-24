@@ -4,13 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class SpawnEnemies : MonoBehaviour {
+public class GameController : MonoBehaviour {
 
-    public static SpawnEnemies instance;
+    public static GameController instance;
 
     // Outlets
     public GameObject[] EnemyPrefabs;
     public GameObject[] BossPrefabs;
+    public Image bossHealthImage;
+    public int level;
 
     // Configurations
     public int MAX_ENEMIES = 10;
@@ -39,15 +41,35 @@ public class SpawnEnemies : MonoBehaviour {
     public TMP_Text timer;
     private float startTime;
 
+    public string timerText;
 
     void Awake() {
         instance = this;
     }
 
+    public void Reset() {
+      startTime = Time.time;
+      level = 1;
+
+      availEnemyPrefabs = new List<GameObject>();
+      availEnemyPrefabs.Add(EnemyPrefabs[0]);
+      availEnemyPrefabs.Add(EnemyPrefabs[1]);
+
+      // reset enemies and bosse
+      enemies = GameObject.FindGameObjectsWithTag("Enemy");
+      bosses = GameObject.FindGameObjectsWithTag("Boss");
+      for (int i=0; i<enemies.Length; i++) {
+        Destroy(enemies[i]);
+      }
+      Debug.Log(bosses.Length);
+      if (bosses.Length != 0) {Destroy(bosses[0]);};
+      boss_was_spawned = false;
+
+    }
+
     void Start() {
-        startTime = Time.time;
-        availEnemyPrefabs.Add(EnemyPrefabs[0]);
-        availEnemyPrefabs.Add(EnemyPrefabs[1]);
+        Reset();
+        bossHealthImage.enabled = false;
     }
 
     void Update()
@@ -59,7 +81,7 @@ public class SpawnEnemies : MonoBehaviour {
         boss_is_alive = bossCount != 0;
 
         // keep track of stage
-        if (Time.time > cur_stage*30f) {
+        if (Time.time - startTime > cur_stage*30f) {
           cur_stage += 1;
           MAX_ENEMIES = (int) ((float) MAX_ENEMIES * 1.25f);
           // new enemy type
@@ -83,18 +105,46 @@ public class SpawnEnemies : MonoBehaviour {
         }
 
         // Spawn Boss 1
-        if (Time.time > 30f && boss_was_spawned != true) {
+        if (Time.time - startTime > 30f && boss_was_spawned != true) {
             SpawnAnEnemy(BossPrefabs[0]);
             boss_was_spawned = true;
+            bossHealthImage.enabled = true;
+            Debug.Log("Boss spawned!");
         }
 
-        // Timer display
-        float t = Time.time - startTime;
-        string minutes = ((int) t / 60).ToString();
-        string seconds = (t % 60).ToString("f2");
-        timer.text = minutes + ":" + seconds;
+        DisplayTimer();
     }
 
+    private void DisplayTimer()
+    {
+
+        float t = Time.time - startTime;
+        float min = Mathf.Floor(t / 60);
+        float sec = Mathf.Round(t % 60);
+        string minutes;
+        string seconds;
+
+        if(min < 10)
+        {
+            minutes = "0" + min.ToString();
+        }
+        else
+        {
+            minutes = min.ToString();
+        }
+
+        if(sec < 10)
+        {
+            seconds = "0" + Mathf.RoundToInt(sec).ToString();
+        }
+        else
+        {
+            seconds = sec.ToString();
+        }
+
+        timer.text = minutes.ToString() + ":" + seconds;
+        timerText = timer.text;
+    }
     void SpawnRandomEnemy() {
 
         // choose what enemy to spawn
