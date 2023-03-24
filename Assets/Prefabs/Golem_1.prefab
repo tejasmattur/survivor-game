@@ -437,7 +437,6 @@ MonoBehaviour:
   speed: 15
   collisonDamage: 1
   healthBar: {fileID: 9128593617018635397}
-  spawner: {fileID: 0}
   coin: {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
   coinObjects:
   - {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
