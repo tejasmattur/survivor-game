@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
       }
 
         // Fire shurikens
-        if (coinCount > 5)
+        if (coinCount > 10)
         {
             if (Time.time > shurikenNextFire)
             {
