@@ -78,6 +78,18 @@ public class ShopController : MonoBehaviour
         }
     }
 
+    public void upgradeMaxHealth(int price)
+    {
+        int coinCount = PlayerController.instance.coinCount;
+        if (coinCount >= price)
+        {
+            PlayerController.instance.coinCount -= price;
+            updateCoinCount();
+            PlayerController.instance.maxHealth += 1;
+            closeShop();
+        }
+    }
+
     public void updateCoinCount()
     {
         BaseCoin.instance.UpdateCoinText();
