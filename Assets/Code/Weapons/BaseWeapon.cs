@@ -8,13 +8,9 @@ public class BaseWeapon : MonoBehaviour
   	// Outlets
   	protected Rigidbody2D _ridgidbody2D;
     public float weaponDamage;
-    public int weaponLevel;
+    public float weaponDamageMultiplier = 1f;
+    public float weaponSpeedMultiplier = 1f;
 
-    public BaseWeapon(float damage, int level)
-    {
-        weaponDamage = damage;
-        weaponLevel = level;
-    }
 
     protected void setBasicConfigurations() {
       _ridgidbody2D = GetComponent<Rigidbody2D>();
@@ -23,19 +19,8 @@ public class BaseWeapon : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) {
         var enemy = other.collider.GetComponent<BaseEnemy>();
         if(enemy){
-            enemy.takeDamage(weaponDamage);
+            enemy.takeDamage(weaponDamage*weaponDamageMultiplier);
         }
     	Destroy(gameObject);
     }
-
-    public void IncreaseDamage(float amount)
-    {
-        weaponDamage += amount;
-    }
-
-    public void IncreaseLevel(int amount)
-    {
-        weaponLevel += amount;
-    }
-
 }

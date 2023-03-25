@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class Boomerang : BaseWeapon
 {
-    public Boomerang(float damage, int level) : base(damage, level)
-    {
-    }
     void Start()
     {
         setBasicConfigurations();
-        _ridgidbody2D.velocity = transform.right * 10;
+        _ridgidbody2D.velocity = transform.right * 10 * weaponSpeedMultiplier;
     }
 
     void Update()

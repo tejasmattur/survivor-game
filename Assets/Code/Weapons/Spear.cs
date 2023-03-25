@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class Spear : BaseWeapon
 {
-    public static Spear instance;
 
-    public Spear(float damage, int level) : base(damage, level)
-    {
-    }
+  void Start()
+  {
+      setBasicConfigurations();
+      _ridgidbody2D.velocity = transform.right * 10 * weaponSpeedMultiplier;
+  }
 
-    private void Awake()
-    {
-        instance = this;
-    }
+  void Update()
+  {
 
-    void Start() {
-		setBasicConfigurations();
-		_ridgidbody2D.velocity = transform.right * 10;
-	}
-
+  }
 }
