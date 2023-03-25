@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public GameObject[] weaponPrefabs;
     public GameObject spearPrefab;
     public GameObject shurikenPrefab;
+    public GameObject bombPrefab;
 
     // Weapons Effect
     public int maxSpears = 3;
@@ -39,14 +40,18 @@ public class PlayerController : MonoBehaviour
     public float shurikenShotTime = 2.0f;
     private float shurikenNextFire = 0.0f;
 
+    public int maxBombs = 2;
+    public float bombCooldown = 1f;
+    public float bombTTL = 10f; // max time to live
+    private float nextBomb = 0;
+
+
     public int coinCount = 0;
-	public TMP_Text coinText;
+	  public TMP_Text coinText;
 
-    public float spearDamage = 1f;
-    public int spearLevel = 1;
-
-    public float shurikenDamage = 1.5f;
-    public int shurikenLevel = 1;
+    public float spearDamageMultiplier = 1f;
+    public float shurikenDamageMultplier = 0f;
+    public float bombDamageMultiplier = 0f;
 
 
     // HUD
@@ -135,13 +140,10 @@ public class PlayerController : MonoBehaviour
                 Spear spearComponent = newSpear.GetComponent<Spear>();
 
                 // Set the damage and level values of the Spear component
-                spearComponent.weaponDamage = spearDamage;
-                spearComponent.weaponLevel = spearLevel;
+                spearComponent.weaponDamageMultiplier = spearDamageMultiplier;
 
                 newSpear.transform.position = cur_pos + enemy_dir;
                 newSpear.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
-                //SpawnSpear(spearDamage, spearLevel, cur_pos + enemy_dir, Quaternion.Euler(0.0f, 0.0f, fireAngle));
-
                 spearsLeft -= 1;
 
     			if (spearsLeft == 0) { // Cool down
@@ -155,7 +157,7 @@ public class PlayerController : MonoBehaviour
       }
 
         // Fire shurikens
-        if (coinCount > 5)
+        if (shurikenDamageMultplier > 0)
         {
             if (Time.time > shurikenNextFire)
             {
@@ -167,8 +169,7 @@ public class PlayerController : MonoBehaviour
                 GameObject newShuriken = Instantiate(weaponPrefabs[(int)Weapon.Shuriken]);
                 Shuriken shurikenComponent = newShuriken.GetComponent<Shuriken>();
                 //Set the damage and level values of the Spear component
-                shurikenComponent.weaponDamage = shurikenDamage;
-                shurikenComponent.weaponLevel = shurikenLevel;
+                shurikenComponent.weaponDamageMultiplier = shurikenDamageMultplier;
 
                 Vector2 shuriken_dir = randPos - cur_pos;
                 float fireAngle = getBetweenAngle(Vector2.right, shuriken_dir);
@@ -191,9 +192,27 @@ public class PlayerController : MonoBehaviour
             }
 
         }
+
+
+        // drop bombs
+        if (bombDamageMultiplier > 0) {
+          int bombsLeft = maxBombs - FindObjectsOfType<Bomb>().Length;
+          if(Time.time > nextBomb && bombsLeft > 0) {
+            Vector2 spawnPos = GameController.instance.getRandomPosNearPlayer(0.1f, 3);
+            GameObject new_bomb =  Instantiate(bombPrefab);
+            new_bomb.transform.position = spawnPos;
+
+            Bomb bombComponent = new_bomb.GetComponent<Bomb>();
+            bombComponent.weaponDamageMultiplier = bombDamageMultiplier;
+
+            Destroy(new_bomb, 15);
+            nextBomb = Time.time + bombCooldown;
+          }
+        }
+
     }
 
-        public void takeDamage(float damage)
+    public void takeDamage(float damage)
     {
         HitPoints -= damage;
         healthBar.setHealth(HitPoints, maxHealth);
@@ -217,20 +236,6 @@ public class PlayerController : MonoBehaviour
 	     float sign = (Vector2.Dot(v1_r90, v2) < 0) ? -1.0f : 1.0f;
 	     return Vector2.Angle(v1, v2) * sign;
 	 }
-
-    void SpawnSpear(float damage, int level, Vector2 pos, Quaternion rotation)
-    {
-        GameObject newSpear = Instantiate(weaponPrefabs[(int)Weapon.Spear]);
-        // Get a reference to the Spear component attached to the new instance
-        Spear spearComponent = newSpear.GetComponent<Spear>();
-
-        // Set the damage and level values of the Spear component
-        spearComponent.weaponDamage = spearDamage;
-        spearComponent.weaponLevel = spearLevel;
-
-        newSpear.transform.position = pos;
-        newSpear.transform.rotation = rotation;
-    }
 
 
 }

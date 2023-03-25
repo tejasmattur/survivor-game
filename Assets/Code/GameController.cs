@@ -16,7 +16,6 @@ public class GameController : MonoBehaviour {
 
     // Configurations
     public int MAX_ENEMIES = 10;
-    public int min_spawn_distance = 3;
 
     // State Tracking
     private int enemyCount;
@@ -145,6 +144,8 @@ public class GameController : MonoBehaviour {
         timer.text = minutes.ToString() + ":" + seconds;
         timerText = timer.text;
     }
+
+
     void SpawnRandomEnemy() {
 
         // choose what enemy to spawn
@@ -154,78 +155,30 @@ public class GameController : MonoBehaviour {
     }
 
     void SpawnAnEnemy(GameObject enemy_to_spawn) {
+
+      // spawn close enough, but not too close to player
+      Vector2 spawnPos = getRandomPosNearPlayer(3, 15);
+      Instantiate(enemy_to_spawn, spawnPos, Quaternion.identity);
+    }
+
+    public Vector2 getRandomPosNearPlayer(float min_spawn_distance, int offset) {
       playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
       int player_x = (int) playerPos.x;
       int player_y = (int) playerPos.y;
-      // spawn close enough, but not too close to player
+
       Vector2 spawnPos;
       int xPos;
       int yPos;
       do {
-        xPos = Random.Range(player_x- 15, player_x+ 15);
-        yPos = Random.Range(player_y- 15, player_y+ 15);
+        xPos = Random.Range(player_x- offset, player_x+ offset);
+        yPos = Random.Range(player_y- offset, player_y+ offset);
         spawnPos = new Vector2(xPos, yPos);
       } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance
                 || xPos < MIN_X || xPos > MAX_X || yPos < MIN_Y || yPos > MAX_Y
               );
 
-      Instantiate(enemy_to_spawn, spawnPos, Quaternion.identity);
+      return spawnPos;
     }
 
-    // void SpawnAnEnemy2(GameObject enemyToSpawn)
-    // {
-    //     int maxAttempts = 100;
-    //     int attempts = 0;
-    //     bool enemySpawned = false;
-    //
-    //     playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-    //     int player_x = (int)playerPos.x;
-    //     int player_y = (int)playerPos.y;
-    //
-    //     while (!enemySpawned && attempts < maxAttempts)
-    //     {
-    //         Vector2 spawnPos;
-    //         do
-    //         {
-    //             int xPos = Random.Range(player_x - 15, player_x + 15);
-    //             int yPos = Random.Range(player_y - 15, player_y + 15);
-    //             spawnPos = new Vector2(xPos, yPos);
-    //         } while (Vector2.Distance(spawnPos, playerPos) < min_spawn_distance);
-    //
-    //
-    //         Collider2D enemyCollider = enemyToSpawn.GetComponent<Collider2D>();
-    //         Vector2 enemyColliderSize = enemyCollider.size;
-    //
-    //         Collider2D[] colliders = Physics2D.OverlapBoxAll(spawnPos, enemyColliderSize, 0);
-    //
-    //         if (colliders.Length == 0)
-    //         {
-    //             Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
-    //             enemySpawned = true;
-    //         }
-    //
-    //         else
-    //         {
-    //             bool hitBoundary = false;
-    //
-    //             foreach (Collider2D collider in colliders)
-    //             {
-    //                 if (collider.CompareTag("MapBoundary"))
-    //                 {
-    //                     hitBoundary = true;
-    //                     break;
-    //                 }
-    //             }
-    //
-    //             if (!hitBoundary)
-    //             {
-    //                 Instantiate(enemyToSpawn, spawnPos, Quaternion.identity);
-    //                 enemySpawned = true;
-    //             }
-    //         }
-    //         attempts++;
-    //     }
-    //
-    // }
 
 }

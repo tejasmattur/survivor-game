@@ -8,9 +8,10 @@ public class Bomb : MonoBehaviour
 
     public float weaponDamage = 3f;
     public float explosionDelay = 0.5f;
-    public float explosionRadius = 1.5f;
-
+    public float explosionRadius = 10f;
     private float explosionStart = -1f;
+
+    public float weaponDamageMultiplier = 1f;
 
     private BaseEnemy[] enemies;
 
@@ -42,17 +43,16 @@ public class Bomb : MonoBehaviour
       enemies = FindObjectsOfType<BaseEnemy>();
       for(int i=0; i< enemies.Length; i++) {
         Vector2 directionToEnemy = enemies[i].transform.position - transform.position;
-        Debug.Log(directionToEnemy.sqrMagnitude);
         if(directionToEnemy.sqrMagnitude < explosionRadius) {
-            enemies[i].takeDamage(weaponDamage);
+            enemies[i].takeDamage(weaponDamage*weaponDamageMultiplier);
             Debug.Log("An enemy got damaged");
         }
       }
 
     }
 
-    void OnCollisionEnter2D(Collision2D other) {
-        var enemy = other.collider.GetComponent<BaseEnemy>();
+    void OnTriggerEnter2D(Collider2D other) {
+        var enemy = other.GetComponent<BaseEnemy>();
         if(enemy && explosionStart==-1){ // not yet triggered
             explosionStart = Time.time;
         }
