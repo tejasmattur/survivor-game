@@ -16,7 +16,7 @@ public class GameOver : MonoBehaviour
     // Start is called before the first frame update
     public void gameOver()
     {
-        coinText.text = "Coins Collected :" + PlayerController.instance.coinCount;
+        coinText.text = "Coins Collected:" + PlayerController.instance.coinCount;
         timeText.text = "Time Survived: " + GameController.instance.timerText;
         gameObject.SetActive(true);
     }
