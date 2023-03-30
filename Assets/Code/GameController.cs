@@ -29,6 +29,9 @@ public class GameController : MonoBehaviour {
     private int new_enemy_stage = 3;
     private List<GameObject> availEnemyPrefabs = new List<GameObject>();
 
+    private float nextBossSpawn = 30f;
+    private int bossIdx = 0;
+
     // constants
     private int MAX_X = 15;
     private int MIN_X = -110;
@@ -60,7 +63,6 @@ public class GameController : MonoBehaviour {
       for (int i=0; i<enemies.Length; i++) {
         Destroy(enemies[i]);
       }
-      Debug.Log(bosses.Length);
       if (bosses.Length != 0) {Destroy(bosses[0]);};
       boss_was_spawned = false;
 
@@ -103,12 +105,19 @@ public class GameController : MonoBehaviour {
             SpawnRandomEnemy();
         }
 
-        // Spawn Boss 1
-        if (Time.time - startTime > 30f && boss_was_spawned != true) {
-            SpawnAnEnemy(BossPrefabs[0]);
+        // Spawn Boss
+        if (Time.time - startTime > nextBossSpawn) {
+            SpawnAnEnemy(BossPrefabs[bossIdx]);
             boss_was_spawned = true;
             bossHealthImage.enabled = true;
             Debug.Log("Boss spawned!");
+            nextBossSpawn += 45f;
+            if (bossIdx < BossPrefabs.Length-1) {
+              bossIdx += 1;
+            }
+            else {
+              bossIdx = 0;
+            }
         }
 
         DisplayTimer();

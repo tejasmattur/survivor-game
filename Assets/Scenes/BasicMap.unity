@@ -1878,7 +1878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75501a0dc2817034bada6b895f37eb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 10
   speed: 30
   gameOver: {fileID: 590860560}
   weaponPrefabs:
@@ -103144,6 +103144,7 @@ MonoBehaviour:
   - {fileID: 2473311090980181674, guid: cb65d6accb222f44dad1d40edbd11ad9, type: 3}
   BossPrefabs:
   - {fileID: 3898938028441121490, guid: 176dea1fdddc9984ca31ed8e7a9d2c18, type: 3}
+  - {fileID: 9184485027005482788, guid: a2ff8688c7f842c4a970f396f2e0cd4e, type: 3}
   bossHealthImage: {fileID: 1921770784}
   level: 0
   MAX_ENEMIES: 5

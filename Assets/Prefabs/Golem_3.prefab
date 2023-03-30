@@ -277,7 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 35
-  speed: 5
+  speed: 8
   collisonDamage: 3
   healthBar: {fileID: 5209501897004114444}
   coin: {fileID: 7404750045923206117, guid: 94d13325eb191411b80ba51531af2b01, type: 3}
