@@ -22,6 +22,7 @@ public class PauseMenu : MonoBehaviour
      }   
     }
     public void Resume() {
+        Debug.Log("Game resumed");
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         GameisPaused = false;
@@ -34,7 +35,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame() {
         Debug.Log("Quitting game");
-        Application.Quit();
+        SceneManager.LoadScene("StartMenu");
     }
 
 }

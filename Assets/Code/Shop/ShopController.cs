@@ -74,6 +74,9 @@ public class ShopController : MonoBehaviour
       switch(Levels[spearIdx]) {
         case 2:
           PlayerController.instance.maxSpears += 1;
+          // PlayerController.instance.coinCount -= 1;
+          // BaseCoin.instance.UpdateCoinText();
+          // PlayerController.instance.UpdateCoinText();
           UpgradeTexts[spearIdx].text = "Decrease firing cooldown by 10%";  // for next level
           break;
         case 3:

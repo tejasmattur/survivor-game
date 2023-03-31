@@ -69,7 +69,6 @@ public class PlayerController : MonoBehaviour
 			animator = GetComponent<Animator>();
 			HitPoints = maxHealth;
 			healthBar.setHealth(HitPoints, maxHealth);
-
     }
 
     void FixedUpdate() {
@@ -209,7 +208,6 @@ public class PlayerController : MonoBehaviour
             nextBomb = Time.time + bombCooldown;
           }
         }
-
     }
 
     public void takeDamage(float damage)
