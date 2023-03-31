@@ -37,7 +37,9 @@ public class BaseEnemy : MonoBehaviour
             coinToDrop = coinObjects[(int)CoinType.red];
         }
 
-        Instantiate(coinToDrop, transform.position, Quaternion.identity);
+        Vector3 position = transform.position;
+        position = new Vector3(position.x, position.y, -1);
+        Instantiate(coinToDrop, position, Quaternion.identity);
         Destroy(gameObject);
     }
 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2292189217036956422}
   - component: {fileID: 5323804012338279120}
   - component: {fileID: 395230350901190530}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: RedCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,5 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb80da61c4267417aa8cafc72f5f7641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinValue: 1
+  tilemap: {fileID: 0}
+  coinValue: 5
   totalCoinCount: 0
