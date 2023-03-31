@@ -168,6 +168,7 @@ public class GameController : MonoBehaviour {
       // spawn close enough, but not too close to player
       Vector2 spawnPos = getRandomPosNearPlayer(3, 15);
       Instantiate(enemy_to_spawn, spawnPos, Quaternion.identity);
+      //enemy_to_spawn.transform.parent = grid.transform;
     }
 
     public Vector2 getRandomPosNearPlayer(float min_spawn_distance, int offset) {
