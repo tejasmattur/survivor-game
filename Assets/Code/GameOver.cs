@@ -5,19 +5,47 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class GameOver : MonoBehaviour
 {
-
+    public static GameOver instance;
+    //public string scoreId;
     public TMP_Text coinText;
     public TMP_Text timeText;
+    public TMP_Text scoreText;
+    public int score;
+    public int[] scores = new int[7];
+
+    public void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         Time.timeScale = 1.0f;
         gameObject.SetActive(false);
+        //for (int i = 0; i < 7; i++)
+        //{
+        //    try
+        //    {
+        //        scores[i] = PlayerPrefs.GetInt(i.ToString());
+        //    }
+        //    catch
+        //    {
+        //        PlayerPrefs.SetInt(i.ToString(), 6 - i);
+        //    }
+        //}
+        //PlayerPrefs.Save();
     }
     // Start is called before the first frame update
     public void gameOver()
     {
         coinText.text = "Coins Collected:" + PlayerController.instance.coinCount;
         timeText.text = "Time Survived: " + GameController.instance.timerText;
+        score = (int)GameController.instance.endTime * 2 + PlayerController.instance.coinCount;
+        scoreText.text = "Score: " + score.ToString();
+        //scoreId = System.Guid.NewGuid().ToString();
+        //PlayerPrefs.SetInt("0", score);
+        PushScoreToLeaderboard();
+
         gameObject.SetActive(true);
     }
 
@@ -32,4 +60,40 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene("StartMenu");
     }
+
+    public void PushScoreToLeaderboard()
+    {
+        bool isHighScore = false;
+        int indexToReplace = -1;
+        for (int i = 0; i < 7; i++)
+        {
+            if (score > PlayerPrefs.GetInt(i.ToString()))
+            {
+                isHighScore = true;
+                indexToReplace = i;
+                break;
+            }
+        }
+
+        // Only update scores and UI if new score is a high score
+        if (isHighScore)
+        {
+            //// Add new score to array
+            //for (int i = 7 - 1; i > indexToReplace; i--)
+            //{
+            //    PlayerPrefs.SetInt(i.ToString(), PlayerPrefs.GetInt((i-1).ToString()));
+            //}
+            //// Add new score to array
+            //PlayerPrefs.SetInt(indexToReplace.ToString(), score);
+
+            for (int i = 6; i >= indexToReplace; i--)
+            {
+                PlayerPrefs.SetInt((i + 1).ToString(), PlayerPrefs.GetInt(i.ToString()));
+            }
+            // Add new score to array
+            PlayerPrefs.SetInt(indexToReplace.ToString(), score);
+        }
+        PlayerPrefs.Save();
+    }
+
 }

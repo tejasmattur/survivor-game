@@ -42,6 +42,7 @@ public class GameController : MonoBehaviour {
 
     public TMP_Text timer;
     private float startTime;
+    public float endTime;
 
     public string timerText;
 
@@ -152,6 +153,7 @@ public class GameController : MonoBehaviour {
 
         timer.text = minutes.ToString() + ":" + seconds;
         timerText = timer.text;
+        endTime = t;
     }
 
 
