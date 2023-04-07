@@ -2913,6 +2913,7 @@ MonoBehaviour:
   spearPrefab: {fileID: 2488543672055770359, guid: 1d506d7b97ae54f4daaaf0ba8144b215, type: 3}
   shurikenPrefab: {fileID: 3054681059788208430, guid: 0d91a606f82a240e5ab6cec136b86402, type: 3}
   bombPrefab: {fileID: 5812917817711755350, guid: ac46269fa94809a4c840ff2a71a2e30d, type: 3}
+  ballPrefab: {fileID: 2780162919200739620, guid: b87c96cd6df26ce4890fdb348b4af2ea, type: 3}
   maxSpears: 3
   spearsLeft: 3
   cooldown: 3
@@ -2924,11 +2925,16 @@ MonoBehaviour:
   maxBombs: 2
   bombCooldown: 1
   bombTTL: 15
+  maxBalls: 2
+  ballsLeft: 3
+  ballCooldown: 2
+  ballShotTime: 2
   coinCount: 0
   coinText: {fileID: 175242186}
   spearDamageMultiplier: 1
   shurikenDamageMultplier: 0
   bombDamageMultiplier: 0
+  ballDamageMultiplier: 1
   healthBar: {fileID: 891484819}
 --- !u!70 &461970819
 CapsuleCollider2D:
