@@ -22,18 +22,18 @@ public class GameOver : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         gameObject.SetActive(false);
-        //for (int i = 0; i < 7; i++)
-        //{
-        //    try
-        //    {
-        //        scores[i] = PlayerPrefs.GetInt(i.ToString());
-        //    }
-        //    catch
-        //    {
-        //        PlayerPrefs.SetInt(i.ToString(), 6 - i);
-        //    }
-        //}
-        //PlayerPrefs.Save();
+
+        //uncomment this to clear local stored scores
+        //PlayerPrefs.DeleteAll();
+
+        if (!PlayerPrefs.HasKey("0"))
+        {
+            for (int i = 0; i < 7; i++)
+            {
+                PlayerPrefs.SetInt(i.ToString(), 0);
+            }
+            PlayerPrefs.Save();
+        }
     }
     // Start is called before the first frame update
     public void gameOver()
@@ -78,14 +78,6 @@ public class GameOver : MonoBehaviour
         // Only update scores and UI if new score is a high score
         if (isHighScore)
         {
-            //// Add new score to array
-            //for (int i = 7 - 1; i > indexToReplace; i--)
-            //{
-            //    PlayerPrefs.SetInt(i.ToString(), PlayerPrefs.GetInt((i-1).ToString()));
-            //}
-            //// Add new score to array
-            //PlayerPrefs.SetInt(indexToReplace.ToString(), score);
-
             for (int i = 6; i >= indexToReplace; i--)
             {
                 PlayerPrefs.SetInt((i + 1).ToString(), PlayerPrefs.GetInt(i.ToString()));
