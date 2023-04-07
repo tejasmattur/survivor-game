@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public GameObject spearPrefab;
     public GameObject shurikenPrefab;
     public GameObject bombPrefab;
+    public GameObject ballPrefab;
 
     // Weapons Effect
     public int maxSpears = 3;
@@ -45,6 +46,12 @@ public class PlayerController : MonoBehaviour
     public float bombTTL = 10f; // max time to live
     private float nextBomb = 0;
 
+    public int maxBalls = 3;
+    public float ballsLeft = 3;
+    public float ballCooldown = 2.0f;
+    public float ballShotTime = 2.0f;
+    private float nextBall = 0f;
+
 
     public int coinCount = 0;
 	  public TMP_Text coinText;
@@ -52,6 +59,7 @@ public class PlayerController : MonoBehaviour
     public float spearDamageMultiplier = 1f;
     public float shurikenDamageMultplier = 0f;
     public float bombDamageMultiplier = 0f;
+    public float ballDamageMultiplier = 1f;
 
 
     // HUD
@@ -153,6 +161,31 @@ public class PlayerController : MonoBehaviour
 	    			nextFire = Time.time + shotTime/maxSpears;
 	    		}
     		}
+
+        // shoot ball
+        if (ballDamageMultiplier > 0) {
+          if (Time.time > nextBall) {
+
+                  GameObject newBall = Instantiate(ballPrefab);
+                  // Get a reference to the Spear component attached to the new instance
+                  Basketball ballComponent = newBall.GetComponent<Basketball>();
+
+                  // Set the damage and level values of the Spear component
+                  ballComponent.weaponDamageMultiplier = ballDamageMultiplier;
+
+                  newBall.transform.position = cur_pos + enemy_dir;
+                  newBall.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
+                  ballsLeft -= 1;
+
+      			if (ballsLeft == 0) { // Cool down
+  	    			ballsLeft = maxBalls;
+  	    			nextBall = Time.time + ballCooldown;
+  	    		}
+  	    		else {
+  	    			nextBall = Time.time + ballShotTime/maxBalls;
+  	    		}
+      		}
+        }
       }
 
         // Fire shurikens
@@ -208,6 +241,9 @@ public class PlayerController : MonoBehaviour
             nextBomb = Time.time + bombCooldown;
           }
         }
+
+
+
     }
 
     public void takeDamage(float damage)
