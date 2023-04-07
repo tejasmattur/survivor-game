@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f49c4197834887045822e2776bc59c23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 35
+  maxHealth: 30
   speed: 8
   collisonDamage: 3
   healthBar: {fileID: 5209501897004114444}
