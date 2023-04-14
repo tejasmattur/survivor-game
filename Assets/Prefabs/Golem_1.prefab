@@ -442,8 +442,8 @@ MonoBehaviour:
   - {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
   - {fileID: 7404750045923206117, guid: 94d13325eb191411b80ba51531af2b01, type: 3}
   coinDropProbabilities:
-  - 0.8
-  - 0
+  - 0.9
+  - 0.1
 --- !u!60 &5949378421266543794
 PolygonCollider2D:
   m_ObjectHideFlags: 0

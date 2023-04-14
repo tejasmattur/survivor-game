@@ -35,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 6463036518568470640}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5216927451118964511
 SpriteRenderer:
@@ -125,7 +125,6 @@ MonoBehaviour:
   speed: 10
   collisonDamage: 1
   healthBar: {fileID: 4112199931076446677}
-  spawner: {fileID: 0}
   coin: {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
   coinObjects:
   - {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
