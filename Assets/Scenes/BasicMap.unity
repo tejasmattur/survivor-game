@@ -541,7 +541,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -549,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 650152780}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: upgradeBomb
+      value: upgradeItem
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -557,7 +557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1640,7 +1640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bb5424ede9e41888b08a52462a3949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scores: 
   scoreTexts:
   - {fileID: 1187382472}
   - {fileID: 515778510}
@@ -2903,6 +2902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75501a0dc2817034bada6b895f37eb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HitPoints: 0
   maxHealth: 10
   speed: 30
   gameOver: {fileID: 590860560}
@@ -2926,7 +2926,7 @@ MonoBehaviour:
   bombCooldown: 1
   bombTTL: 15
   maxBalls: 2
-  ballsLeft: 3
+  ballsLeft: 2
   ballCooldown: 2
   ballShotTime: 2
   coinCount: 0
@@ -2934,7 +2934,7 @@ MonoBehaviour:
   spearDamageMultiplier: 1
   shurikenDamageMultplier: 0
   bombDamageMultiplier: 0
-  ballDamageMultiplier: 1
+  ballDamageMultiplier: 0
   healthBar: {fileID: 891484819}
 --- !u!70 &461970819
 CapsuleCollider2D:
@@ -3612,7 +3612,6 @@ MonoBehaviour:
   scoreText: {fileID: 891547399}
   score: 0
   scores: 
-  leaderboard: {fileID: 0}
 --- !u!114 &590860561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3742,6 +3741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopUI: {fileID: 1726427714}
   HUDController: {fileID: 881645586}
+  ItemNameTexts: []
   LevelTexts:
   - {fileID: 946536290}
   - {fileID: 800040037}
@@ -6332,7 +6332,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6340,7 +6340,7 @@ PrefabInstance:
       objectReference: {fileID: 650152780}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: upgradeShuriken
+      value: upgradeItem
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -6348,7 +6348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -7219,7 +7219,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -7227,7 +7227,7 @@ PrefabInstance:
       objectReference: {fileID: 650152780}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: upgradeSpear
+      value: upgradeItem
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -7235,7 +7235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 820727307938131385, guid: e71da2ed17fc94a3b8d21871a9b0433d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

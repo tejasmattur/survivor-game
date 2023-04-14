@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     }
     // Outlet
 		Rigidbody2D _rigidbody2D;
-		protected float HitPoints;
+		public float HitPoints;
 		public float maxHealth = 10;
     public float speed;
     SpriteRenderer sprite;
@@ -46,8 +46,8 @@ public class PlayerController : MonoBehaviour
     public float bombTTL = 10f; // max time to live
     private float nextBomb = 0;
 
-    public int maxBalls = 3;
-    public float ballsLeft = 3;
+    public int maxBalls = 2;
+    public float ballsLeft = 2;
     public float ballCooldown = 2.0f;
     public float ballShotTime = 2.0f;
     private float nextBall = 0f;
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     public float spearDamageMultiplier = 1f;
     public float shurikenDamageMultplier = 0f;
     public float bombDamageMultiplier = 0f;
-    public float ballDamageMultiplier = 1f;
+    public float ballDamageMultiplier = 0f;
 
 
     // HUD

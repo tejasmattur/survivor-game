@@ -1,25 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class ShopController : MonoBehaviour
 {
 
     public static ShopController instance;
-    // Start is called before the first frame update
+
     public Canvas shopUI;
     public HUDController HUDController;
 
+    public TMP_Text[] ItemNameTexts;
     public TMP_Text[] LevelTexts;
     public TMP_Text[] UpgradeTexts;
 
-    private int spearIdx = 0;
-    private int shurikenIdx = 1;
-    private int bombIdx = 2;
+    private BaseUpgrade[] upgrades;
+    private int[] chosen_upgrades;
 
-    // State tracking
-    private int[] Levels;
+    public Image[] ImageHolders;
+    public Sprite[] ItemSprites;
 
     private void Awake()
     {
@@ -29,10 +31,10 @@ public class ShopController : MonoBehaviour
     void Start()
     {
         shopUI.enabled = false;
-        Levels = new int[] {1,0,0};
-        UpgradeTexts[spearIdx].text = "+1 spear, increase firing rate";
-        UpgradeTexts[shurikenIdx].text = "Unlock 5 randomly-shot shurikens";
-        UpgradeTexts[bombIdx].text = "Unlock 3 bombs";
+        upgrades = new BaseUpgrade[] {
+          new SpearUpgrade(), new BombUpgrade(), new ShurikenUpgrade(),
+          new BallUpgrade(), new HealthUpgrade()
+        };
     }
 
     private void Update()
@@ -43,123 +45,55 @@ public class ShopController : MonoBehaviour
         }
     }
 
+    private int[] randomNoReplacement(int n, int size) {
+      int[] chosen_idxes = new int[] {99, 99, 99};
+      int idx = 0;
+      int new_idx = UnityEngine.Random.Range(0, n);
+      while (idx < chosen_idxes.Length) {
+        while(Array.IndexOf(chosen_idxes, new_idx) > -1) {
+          new_idx = UnityEngine.Random.Range(0, n);
+        }
+        chosen_idxes[idx] = new_idx;
+        idx += 1;
+      }
+      return chosen_idxes;
+    }
+
     public void openShop()
     {
         shopUI.enabled = true;
         Time.timeScale = 0f;
 
-        for(int weaponIdx=0; weaponIdx < LevelTexts.Length; weaponIdx++) {
-          if (Levels[weaponIdx] >= 5) {
-            LevelTexts[weaponIdx].text = "Level 5";
+        chosen_upgrades = randomNoReplacement(upgrades.Length, 3);
+
+        for(int i=0; i < 3; i++) {
+          int item_idx = chosen_upgrades[i];
+          int cur_level = upgrades[item_idx].getCurLevel();
+          if (cur_level >= 5) {
+            LevelTexts[i].text = "Level 5";
           }
           else{
-            LevelTexts[weaponIdx].text = string.Format("Level {0} --> {1}", Levels[weaponIdx], Levels[weaponIdx]+1);
+            LevelTexts[i].text = string.Format("Level {0} --> {1}", cur_level, cur_level+1);
           }
+          UpgradeTexts[i].text = upgrades[item_idx].getUpgradeText();
+          ItemNameTexts[i].text = upgrades[item_idx].getItemName();
+          ImageHolders[i].sprite = ItemSprites[item_idx];
         }
 
+        Debug.Log("Chosen upgrades: " + chosen_upgrades[0].ToString() + ", " + chosen_upgrades[1].ToString() + ", " + chosen_upgrades[2].ToString());
+    }
+
+    public void upgradeItem(int idx) {
+      int upgrade_idx = chosen_upgrades[idx];
+      Debug.Log("Upgrading item at index" + upgrade_idx.ToString());
+      upgrades[upgrade_idx].upgrade();
+      closeShop();
     }
 
     public void closeShop()
     {
         shopUI.enabled = false;
         Time.timeScale = 1f;
-    }
-
-    public void upgradeSpear()
-    {
-      if (Levels[spearIdx] >= 5) {
-        return;
-      }
-      Levels[spearIdx] += 1;
-      switch(Levels[spearIdx]) {
-        case 2:
-          PlayerController.instance.maxSpears += 1;
-          // PlayerController.instance.coinCount -= 1;
-          // BaseCoin.instance.UpdateCoinText();
-          // PlayerController.instance.UpdateCoinText();
-          UpgradeTexts[spearIdx].text = "Decrease firing cooldown by 10%";  // for next level
-          break;
-        case 3:
-          PlayerController.instance.cooldown *= 0.9f;
-          UpgradeTexts[spearIdx].text = "Increase damage by 25%";  // for next level
-          break;
-        case 4:
-          PlayerController.instance.spearDamageMultiplier = 1.25f;
-          UpgradeTexts[spearIdx].text = "Greatly increase firing rate & speed"; // for next level
-          break;
-        case 5:
-          PlayerController.instance.shotTime = 1.25f;
-          UpgradeTexts[spearIdx].text = "Maximum level reached";
-          break;
-      }
-      closeShop();
-    }
-
-    public void upgradeShuriken()
-    {
-      if (Levels[shurikenIdx] >= 5) {
-        return;
-      }
-      Levels[shurikenIdx] += 1;
-      switch(Levels[shurikenIdx]) {
-        case 1:
-          PlayerController.instance.shurikenDamageMultplier = 1f;
-          UpgradeTexts[shurikenIdx].text = "+2 Shurikens";
-          break;
-        case 2:
-          PlayerController.instance.maxShuriken += 2;
-          UpgradeTexts[shurikenIdx].text = "Decrease firing cooldown by 20%";  // for next level
-          break;
-        case 3:
-          PlayerController.instance.shurikenCooldown *= 0.8f;
-          UpgradeTexts[shurikenIdx].text = "Increase damage by 30%";  // for next level
-          break;
-        case 4:
-          PlayerController.instance.shurikenDamageMultplier = 1.3f;
-          UpgradeTexts[shurikenIdx].text = "Greatly increase firing rate & speed"; // for next level
-          break;
-        case 5:
-          PlayerController.instance.shurikenShotTime = 1.5f;
-          UpgradeTexts[shurikenIdx].text = "Maximum level reached";
-          break;
-      }
-      closeShop();
-    }
-
-    public void upgradeBomb() {
-      if (Levels[bombIdx] >= 5) {
-        return;
-      }
-      Levels[bombIdx] += 1;
-      switch(Levels[bombIdx]) {
-        case 1:
-          PlayerController.instance.bombDamageMultiplier = 1f;
-          UpgradeTexts[bombIdx].text = "+1 Bomb";
-          break;
-        case 2:
-          PlayerController.instance.maxBombs += 1;
-          UpgradeTexts[bombIdx].text = "Increase damage by 25%";  // for next level
-          break;
-        case 3:
-          PlayerController.instance.bombDamageMultiplier = 1.25f;
-          UpgradeTexts[bombIdx].text = "+2 Bombs";  // for next level
-          break;
-        case 4:
-          PlayerController.instance.maxBombs += 2;
-          UpgradeTexts[bombIdx].text = "Greatly increase bomb cooldown"; // for next level
-          break;
-        case 5:
-          PlayerController.instance.bombCooldown = 0.5f;
-          UpgradeTexts[bombIdx].text = "Maximum level reached";
-          break;
-      }
-      closeShop();
-    }
-
-    public void upgradeMaxHealth()
-    {
-      PlayerController.instance.maxHealth += 1;
-      closeShop();
     }
 
 }
