@@ -167,6 +167,7 @@ public class PlayerController : MonoBehaviour
           if (Time.time > nextBall) {
 
                   GameObject newBall = Instantiate(ballPrefab);
+                  Destroy(newBall, 5);
                   // Get a reference to the Spear component attached to the new instance
                   Basketball ballComponent = newBall.GetComponent<Basketball>();
 

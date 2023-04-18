@@ -85,7 +85,7 @@ public class GameController : MonoBehaviour {
         // keep track of stage
         if (Time.time - startTime > cur_stage*30f) {
           cur_stage += 1;
-          MAX_ENEMIES = (int) ((float) MAX_ENEMIES * 1.25f);
+          MAX_ENEMIES = (int) ((float) MAX_ENEMIES * 1.35f);
           // new enemy type
           if (availEnemyPrefabs.Count < EnemyPrefabs.Length && cur_stage == new_enemy_stage) {
             availEnemyPrefabs.Add(EnemyPrefabs[availEnemyPrefabs.Count]);
