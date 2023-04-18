@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      healthBar.setHealth(HitPoints, maxHealth);
     	// Move left
     	if(Input.GetKey(KeyCode.A)) {
     		_rigidbody2D.AddForce(Vector2.left * speed * Time.deltaTime, ForceMode2D.Impulse);

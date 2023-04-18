@@ -203,11 +203,13 @@ MonoBehaviour:
   healthBar: {fileID: 6670910052331153437}
   coin: {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
   coinObjects:
+  - {fileID: 7404750045923206117, guid: 6edeb5bb71b234c2ba08d1e73e876a6f, type: 3}
   - {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
   - {fileID: 7404750045923206117, guid: 94d13325eb191411b80ba51531af2b01, type: 3}
   coinDropProbabilities:
-  - 0.7
-  - 0.3
+  - 0.15
+  - 0.85
+  - 1
 --- !u!50 &1546499959561742041
 Rigidbody2D:
   serializedVersion: 4

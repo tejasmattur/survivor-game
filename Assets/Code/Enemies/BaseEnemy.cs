@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum CoinType {
+    health,
     def,
     red
 }
@@ -27,9 +28,12 @@ public class BaseEnemy : MonoBehaviour
     {
         GameObject coinToDrop;
         float randomValue = Random.value;
-
-        if (randomValue <= coinDropProbabilities[(int)CoinType.def])
+        if (randomValue <= coinDropProbabilities[(int)CoinType.health])
         {
+            coinToDrop = coinObjects[(int)CoinType.health];
+            // console.log("health spawn");
+        }
+        else if (randomValue <= coinDropProbabilities[(int)CoinType.def]) {
             coinToDrop = coinObjects[(int)CoinType.def];
         }
         else

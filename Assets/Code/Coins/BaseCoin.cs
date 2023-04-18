@@ -27,11 +27,22 @@ public class BaseCoin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player.GetComponent<PlayerController>().coinCount += coinValue;
-            totalCoinCount = player.GetComponent<PlayerController>().coinCount;
-            HUDController.instance.curExp += coinValue;
-            UpdateCoinText();
-            Destroy(gameObject);
+            if(coinValue == 0) {
+                if(player.GetComponent<PlayerController>().HitPoints < player.GetComponent<PlayerController>().maxHealth) {
+                    if(player.GetComponent<PlayerController>().HitPoints > player.GetComponent<PlayerController>().maxHealth - 2) {
+                        player.GetComponent<PlayerController>().HitPoints += 1;
+                    }
+                    player.GetComponent<PlayerController>().HitPoints += 2;
+                    Destroy(gameObject);
+                }
+            }
+            else {
+                player.GetComponent<PlayerController>().coinCount += coinValue;
+                totalCoinCount = player.GetComponent<PlayerController>().coinCount;
+                HUDController.instance.curExp += coinValue;
+                UpdateCoinText();
+                Destroy(gameObject);
+            }
         }
     }
 

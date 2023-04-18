@@ -646,9 +646,11 @@ MonoBehaviour:
   healthBar: {fileID: 2938255286970597971}
   coin: {fileID: 0}
   coinObjects:
+  - {fileID: 7404750045923206117, guid: 6edeb5bb71b234c2ba08d1e73e876a6f, type: 3}
   - {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
   - {fileID: 7404750045923206117, guid: 94d13325eb191411b80ba51531af2b01, type: 3}
   coinDropProbabilities:
+  - 0
   - 0
   - 1
   energyPrefab: {fileID: 2330698807790558091, guid: f1ef27adf576a9444a6652d7405acbe6, type: 3}

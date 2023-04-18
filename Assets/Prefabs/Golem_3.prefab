@@ -281,9 +281,11 @@ MonoBehaviour:
   healthBar: {fileID: 5209501897004114444}
   coin: {fileID: 7404750045923206117, guid: 94d13325eb191411b80ba51531af2b01, type: 3}
   coinObjects:
+  - {fileID: 7404750045923206117, guid: 6edeb5bb71b234c2ba08d1e73e876a6f, type: 3}
   - {fileID: 2291213034968792600, guid: d2f957312629c42debeff7ba40e05a6c, type: 3}
   - {fileID: 7404750045923206117, guid: 94d13325eb191411b80ba51531af2b01, type: 3}
   coinDropProbabilities:
+  - 0
   - 0
   - 1
   clubPrefab: {fileID: 4738989351822967745, guid: 3266ba030f9940945a4a11a8ecdc85a6, type: 3}
