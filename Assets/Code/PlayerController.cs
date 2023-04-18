@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      healthBar.setHealth(HitPoints, maxHealth);
     	// Move left
     	if(Input.GetKey(KeyCode.A)) {
     		_rigidbody2D.AddForce(Vector2.left * speed * Time.deltaTime, ForceMode2D.Impulse);
@@ -168,6 +168,7 @@ public class PlayerController : MonoBehaviour
           if (Time.time > nextBall) {
 
                   GameObject newBall = Instantiate(ballPrefab);
+                  Destroy(newBall, 5);
                   // Get a reference to the Spear component attached to the new instance
                   Basketball ballComponent = newBall.GetComponent<Basketball>();
 
