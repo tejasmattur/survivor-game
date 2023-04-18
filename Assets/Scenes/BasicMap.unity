@@ -2508,6 +2508,7 @@ MonoBehaviour:
   golemShootSound: {fileID: 8300000, guid: 007641b70f05f461691f408e58df2043, type: 3}
   wraithSpawnSound: {fileID: 8300000, guid: 2a6f7c06c8f1747c8995f413c2126b32, type: 3}
   wraithShootSound: {fileID: 8300000, guid: 9aa1806bbca834b63913dafa56169daa, type: 3}
+  gameOverSound: {fileID: 8300000, guid: f04bb2e9f36054f89a136f5fabbc63e9, type: 3}
 --- !u!82 &303428539
 AudioSource:
   m_ObjectHideFlags: 0

@@ -254,6 +254,7 @@ public class PlayerController : MonoBehaviour
         healthBar.setHealth(HitPoints, maxHealth);
         if(HitPoints <= 0){
             Time.timeScale = 0f;
+            SoundManager.instance.PlaySound("game over");
             gameOver.gameOver();
         }
     }

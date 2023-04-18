@@ -20,6 +20,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip golemShootSound;
     public AudioClip wraithSpawnSound;
     public AudioClip wraithShootSound;
+    public AudioClip gameOverSound;
 
     void Awake()
     {
@@ -91,6 +92,10 @@ public class SoundManager : MonoBehaviour
         if (type == "wraith shoot")
         {
             audioSource.PlayOneShot(wraithShootSound, 0.5f);
+        }
+        if (type == "game over")
+        {
+            audioSource.PlayOneShot(gameOverSound, 0.6f);
         }
 
     }

@@ -28,6 +28,7 @@ public class BaseCoin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            SoundManager.instance.PlaySound("coin");
             if(coinValue == 0) {
                 if(player.GetComponent<PlayerController>().HitPoints < player.GetComponent<PlayerController>().maxHealth) {
                     if(player.GetComponent<PlayerController>().HitPoints > player.GetComponent<PlayerController>().maxHealth - 2) {
