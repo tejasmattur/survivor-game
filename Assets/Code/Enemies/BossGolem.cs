@@ -17,7 +17,6 @@ public class BossGolem : BaseEnemy
 
     void Start() {
       setBasicConfigurations();
-        SoundManager.instance.PlaySound("golem spawn");
     }
 
     void Update() {
