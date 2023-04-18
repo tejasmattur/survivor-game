@@ -17,6 +17,7 @@ public class BossGolem : BaseEnemy
 
     void Start() {
       setBasicConfigurations();
+        SoundManager.instance.PlaySound("golem spawn");
     }
 
     void Update() {
@@ -31,6 +32,7 @@ public class BossGolem : BaseEnemy
 
         for (int i=0; i< fireAngles.Length; i++) {
           GameObject newClub = Instantiate(clubPrefab);
+          SoundManager.instance.PlaySound("golem shoot");
           newClub.transform.position = cur_pos + dir_to_player;
           newClub.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngles[i]);
         }

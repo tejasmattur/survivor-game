@@ -21,6 +21,7 @@ public class BaseCoin : MonoBehaviour
     protected void Start()
     {
         player = GameObject.FindWithTag("Player");
+        StartCoroutine(SelfDestruct());
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -30,6 +31,7 @@ public class BaseCoin : MonoBehaviour
             player.GetComponent<PlayerController>().coinCount += coinValue;
             totalCoinCount = player.GetComponent<PlayerController>().coinCount;
             HUDController.instance.curExp += coinValue;
+            SoundManager.instance.PlaySound("coin");
             UpdateCoinText();
             Destroy(gameObject);
         }
@@ -39,6 +41,12 @@ public class BaseCoin : MonoBehaviour
     {
         player.GetComponent<PlayerController>().coinText.text = player.GetComponent<PlayerController>().coinCount.ToString();
        
+    }
+
+    IEnumerator SelfDestruct()
+    {
+        yield return new WaitForSeconds(10f);
+        Destroy(gameObject);
     }
 
     //protected void setBasicConfigurations()

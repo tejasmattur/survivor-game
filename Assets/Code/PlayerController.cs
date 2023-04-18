@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour
 			// update attack animation
     	if (!animator.GetBool("Attack") && animator.GetFloat("Speed") < 0.1 && enemies.Length != 0) {
     		animator.SetBool("Attack", true);
-    	}
+        }
     	else if (animator.GetFloat("Speed") > 0.1) {
     		animator.SetBool("Attack", false);
     	}
@@ -149,6 +149,7 @@ public class PlayerController : MonoBehaviour
                 // Set the damage and level values of the Spear component
                 spearComponent.weaponDamageMultiplier = spearDamageMultiplier;
 
+                SoundManager.instance.PlaySound("throw");
                 newSpear.transform.position = cur_pos + enemy_dir;
                 newSpear.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
                 spearsLeft -= 1;
@@ -172,7 +173,7 @@ public class PlayerController : MonoBehaviour
 
                   // Set the damage and level values of the Spear component
                   ballComponent.weaponDamageMultiplier = ballDamageMultiplier;
-
+                  SoundManager.instance.PlaySound("throw");
                   newBall.transform.position = cur_pos + enemy_dir;
                   newBall.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
                   ballsLeft -= 1;
@@ -206,7 +207,7 @@ public class PlayerController : MonoBehaviour
                 Vector2 shuriken_dir = randPos - cur_pos;
                 float fireAngle = getBetweenAngle(Vector2.right, shuriken_dir);
                 shuriken_dir.Normalize();
-
+                SoundManager.instance.PlaySound("throw");
                 newShuriken.transform.position = cur_pos + shuriken_dir;
                 newShuriken.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
 
@@ -261,7 +262,8 @@ public class PlayerController : MonoBehaviour
 	  void OnCollisionEnter2D(Collision2D other) {
         var enemy = other.collider.GetComponent<BaseEnemy>();
         if(enemy){
-						takeDamage(enemy.collisonDamage);
+            SoundManager.instance.PlaySound("player");
+			takeDamage(enemy.collisonDamage);
         }
     }
 

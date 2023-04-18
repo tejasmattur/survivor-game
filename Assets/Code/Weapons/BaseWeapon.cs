@@ -20,6 +20,7 @@ public class BaseWeapon : MonoBehaviour
         var enemy = other.collider.GetComponent<BaseEnemy>();
         if(enemy){
             enemy.takeDamage(weaponDamage*weaponDamageMultiplier);
+            SoundManager.instance.PlaySound("hit");
         }
     	Destroy(gameObject);
     }

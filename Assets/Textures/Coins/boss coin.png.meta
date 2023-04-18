@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0a3c49598e684e499150b1ab7359221
+guid: f147cda7cbbdb4d1394999b1d322668d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spinning coin_0
+      name: boss coin_0
       rect:
         serializedVersion: 2
         x: 0
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85e94958be46441a0b011cd2af33a0fa
-      internalID: 1992396001
+      spriteID: 3f43f9097b67d46dc8e45c298e448a41
+      internalID: 299547540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinning coin_1
+      name: boss coin_1
       rect:
         serializedVersion: 2
         x: 16
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f43aec2c6ced4d1c8cb198b47dd05c9
-      internalID: -1615862237
+      spriteID: c3e2637d2689b48068cb711904b13267
+      internalID: -275111280
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinning coin_2
+      name: boss coin_2
       rect:
         serializedVersion: 2
         x: 33
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d267e3aceb062438f94eae68f377714a
-      internalID: -1285060293
+      spriteID: b3751f68914af4a7ba5a1914ac68757a
+      internalID: -1764793973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinning coin_3
+      name: boss coin_3
       rect:
         serializedVersion: 2
         x: 50
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd71c12006489480bb007ca44f4d5a48
-      internalID: -905977777
+      spriteID: fc5aa2dbe09fa4143a4417e56f0b4c68
+      internalID: -1790946828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinning coin_4
+      name: boss coin_4
       rect:
         serializedVersion: 2
         x: 69
@@ -205,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40b57404bba1947c6b61f2aa65349ce6
-      internalID: 595181607
+      spriteID: 5c7a232b84db84d608442df8bf055d14
+      internalID: -438095158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinning coin_5
+      name: boss coin_5
       rect:
         serializedVersion: 2
         x: 82
@@ -226,14 +226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46b7a6f1be0854ddfa551420e1b17dce
-      internalID: 66217522
+      spriteID: b473f2c82a36e4a9eba916a6ace33a8d
+      internalID: -946742143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinning coin_6
+      name: boss coin_6
       rect:
         serializedVersion: 2
         x: 97
@@ -247,14 +247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e22664bb9d1a45c29174ab4c131a645
-      internalID: -1493338488
+      spriteID: 66c3e97d5cc2d47b1a7583cec013115e
+      internalID: 1722579322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinning coin_7
+      name: boss coin_7
       rect:
         serializedVersion: 2
         x: 112
@@ -268,8 +268,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9697e342cc054107afd42e8e6c70dd6
-      internalID: -1967323687
+      spriteID: da0720170c4794fb4a2ded46dc8f511d
+      internalID: -1160486192
       vertices: []
       indices: 
       edges: []
@@ -285,14 +285,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spinning coin_3: -905977777
-      spinning coin_1: -1615862237
-      spinning coin_7: -1967323687
-      spinning coin_0: 1992396001
-      spinning coin_5: 66217522
-      spinning coin_2: -1285060293
-      spinning coin_4: 595181607
-      spinning coin_6: -1493338488
+      boss coin_6: 1722579322
+      boss coin_7: -1160486192
+      boss coin_1: -275111280
+      boss coin_2: -1764793973
+      boss coin_3: -1790946828
+      boss coin_0: 299547540
+      boss coin_4: -438095158
+      boss coin_5: -946742143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

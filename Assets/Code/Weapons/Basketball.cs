@@ -17,6 +17,7 @@ public class Basketball : BaseWeapon
     void OnCollisionEnter2D(Collision2D other) {
         var enemy = other.collider.GetComponent<BaseEnemy>();
         if(enemy){
+            SoundManager.instance.PlaySound("bball hit");
             enemy.takeDamage(weaponDamage*weaponDamageMultiplier);
         }
         // ricochet

@@ -16,6 +16,7 @@ public class BossWraith : BaseEnemy
 
     void Start() {
       setBasicConfigurations();
+      SoundManager.instance.PlaySound("wraith spawn");
     }
 
     void Update() {

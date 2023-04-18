@@ -31,6 +31,7 @@ public class Bomb : MonoBehaviour
 
       Destroy(gameObject);
 
+        SoundManager.instance.PlaySound("explode");
       // explosion animation
       GameObject explosion = Instantiate(
         explosionPrefab,

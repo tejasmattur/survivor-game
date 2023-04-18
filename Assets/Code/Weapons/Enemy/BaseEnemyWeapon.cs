@@ -16,7 +16,8 @@ public class BaseEnemyWeapon : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) {
   			var player = other.collider.GetComponent<PlayerController>();
   			if(player){
-  					player.takeDamage(weaponDamage);
+                SoundManager.instance.PlaySound("player");
+                player.takeDamage(weaponDamage);
   			}
   		Destroy(gameObject);
     }

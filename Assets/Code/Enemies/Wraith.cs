@@ -25,6 +25,7 @@ public class Wraith : BaseEnemy
     		float fireAngle = getBetweenAngle(Vector2.right, dir_to_player);
 
         GameObject newClub = Instantiate(spellPrefab);
+        SoundManager.instance.PlaySound("wraith shoot");
         newClub.transform.position = cur_pos + dir_to_player;
         newClub.transform.rotation = Quaternion.Euler(0.0f, 0.0f, fireAngle);
 

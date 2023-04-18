@@ -112,12 +112,15 @@ public class GameController : MonoBehaviour {
             boss_was_spawned = true;
             bossHealthImage.enabled = true;
             Debug.Log("Boss spawned!");
+            
             nextBossSpawn += 45f;
             if (bossIdx < BossPrefabs.Length-1) {
               bossIdx += 1;
+                SoundManager.instance.PlaySound("golem spawn");
             }
             else {
               bossIdx = 0;
+                SoundManager.instance.PlaySound("wraith spawn");
             }
         }
 

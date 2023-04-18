@@ -41,6 +41,7 @@ public class HUDController : MonoBehaviour
 
             // Increase level when exp is full
             GameController.instance.level += 1;
+            SoundManager.instance.PlaySound("level");
             levelText.text = GameController.instance.level.ToString();
         }
 

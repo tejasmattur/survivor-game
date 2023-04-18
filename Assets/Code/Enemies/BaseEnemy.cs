@@ -58,6 +58,7 @@ public class BaseEnemy : MonoBehaviour
         if(HitPoints <= 0){
             //Instantiate(coin, transform.position, Quaternion.identity);
             //Destroy(gameObject);
+            SoundManager.instance.PlaySound("death");
             onDeath();
         }
     }
